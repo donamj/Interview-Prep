@@ -3,7 +3,7 @@
 ## Tutorials and other useful links
 1. [The Idiots Guide to Big O](http://www.corejavainterviewquestions.com/idiots-guide-big-o/)
 2. [Coding Interview University](https://github.com/jwasham/coding-interview-university)
-3. [Ref Cards}(https://dzone.com/refcardz)
+3. [Ref Cards](https://dzone.com/refcardz)
 
 ## Topic Specific
 1. [System Design](https://www.hiredintech.com/app)
