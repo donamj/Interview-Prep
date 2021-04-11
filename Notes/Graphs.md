@@ -5,7 +5,7 @@
 - [Minimum Spanning Tree](#minimum-spanning-tree)
   * [Kruskal's Algorithm](#kruskal-s-algorithm)
   * [Prim's Algorithm](#prim-s-algorithm)
-- [Shorted Path - Dijkstra's](#shorted-path---dijkstra-s)
+- [Shorted Path - Dijkstra's](#shorted-path---dijkstras)
 - [Knapsack Problem](#knapsack-problem)
 - [Shorted path - Bellman Ford Algorithm](#shorted-path---bellman-ford-algorithm)
 - [Topological Sort](#topological-sort)
@@ -66,7 +66,7 @@ void recursiveDFS(MyGraph g, String vertex, Set<String> visitedRecur)
 ```
 <br>
 
-![..\Images\DFS_Util.png](..\Images\DFS_Util.png)
+![.https://github.com/donamj/Interview-Prep/blob/4b7d4f1092aec5e14ae0da17070440d5f590e712/Images/DFS_Util.png](https://github.com/donamj/Interview-Prep/blob/4b7d4f1092aec5e14ae0da17070440d5f590e712/Images/DFS_Util.png)
 
 <br>
 
@@ -97,7 +97,7 @@ Set<String> BFS(MyGraph g)
 ```
 <br>
 
-![..\Images\BFS.png](..\Images\BFS.png)
+![https://github.com/donamj/Interview-Prep/blob/4b7d4f1092aec5e14ae0da17070440d5f590e712/Images/BFS.png](https://github.com/donamj/Interview-Prep/blob/4b7d4f1092aec5e14ae0da17070440d5f590e712/Images/BFS.png)
 
 <br>
 
@@ -133,7 +133,7 @@ The time complexity of the Prim’s Algorithm is O((V+E)logV) because each verte
 
 <br>
 
-# Shorted Path - Dijkstra's 
+# Shorted Path - Dijkstras 
 
 Reference : https://www.baeldung.com/java-dijkstra
 
@@ -282,9 +282,9 @@ void BellmanFord(Graph graph,int src)
 # Topological Sort
 The most common use for topological sort is ordering steps of a process where some the steps depend on each other.
 
-![..\Images\TopologicalSort_1.png](..\Images\TopologicalSort_1.png)
+![https://github.com/donamj/Interview-Prep/blob/4b7d4f1092aec5e14ae0da17070440d5f590e712/Images/TopologicalSort_1.png](https://github.com/donamj/Interview-Prep/blob/4b7d4f1092aec5e14ae0da17070440d5f590e712/Images/TopologicalSort_1.png)
 
-![..\Images\TopologicalSort_2.png](..\Images\TopologicalSort_2.png)
+![https://github.com/donamj/Interview-Prep/blob/4b7d4f1092aec5e14ae0da17070440d5f590e712/Images/TopologicalSort_2.png](.https://github.com/donamj/Interview-Prep/blob/4b7d4f1092aec5e14ae0da17070440d5f590e712/Images/TopologicalSort_2.png)
 
 
 
