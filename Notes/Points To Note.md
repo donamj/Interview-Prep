@@ -1,3 +1,15 @@
+## Table of Contents
+- [Comparison b/w QuickSort and MergeSort](#comparison-b-w-quicksort-and-mergesort)
+- [Time Complexities](#time-complexities)
+- [What is serialization?](#what-is-serialization-)
+- [Hashmap vs Hashtable](#hashmap-vs-hashtable)
+- [Compare DFS and BFS](#compare-dfs-and-bfs)
+- [DFS algorithm works in the following way](#dfs-algorithm-works-in-the-following-way)
+- [BFS algorithm works in the following way](#bfs-algorithm-works-in-the-following-way)
+- [Topological Sort](#topological-sort)
+
+<br>
+
 ## Comparison b/w QuickSort and MergeSort
 - Although both Quicksort and Mergesort have an average time complexity of O(n log n), Quicksort is the preferred algorithm, as it has an O(log(n)) space complexity. Mergesort, on the other hand, requires O(n) extra storage, which makes it quite expensive for arrays. <br>
 

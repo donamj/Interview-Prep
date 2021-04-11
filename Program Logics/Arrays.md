@@ -1,3 +1,11 @@
+## Table of Contents
+- [Find next permutation](#find-next-permutation)
+- [Spiral Matrix](#spiral-matrix)
+- [Find max sum sub array](#find-max-sum-sub-array)
+- [Merge intervals](#merge-intervals)
+
+<br>
+
 ## Find next permutation
 - Find largest index i such that array[i − 1] < array[i].
 - If no such i exists, then this is already the last permutation.
@@ -5,8 +13,12 @@
 - Swap array[j] and array[i − 1].
 - Reverse the suffix starting at array[i].
 
+<br>
+
 ## Spiral Matrix
 - Path should turn clockwise whenever it would go out of bounds or into a cell that was previously visited
+
+<br>
 
 ## Find max sum sub array
 ```
@@ -34,7 +46,10 @@ static int findMaxSumSubArray(int[] A) {
   }
 ```
 
+<br>
+
 ## Merge intervals
+
 ```
  public int[][] merge(int[][] intervals) {
         Arrays.sort(intervals, (a, b) -> Integer.compare(a[0], b[0]));

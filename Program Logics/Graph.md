@@ -1,3 +1,8 @@
+## Table of Contents
+- [Topological sort](#topological-sort)
+
+<br>
+
 ## Topological sort
 - All vertices of indegree 0 are placed on queue. 
 - While the queue is not empty, a vertex v is removed, and all edges adjacent to v have their indegrees decremented. 
