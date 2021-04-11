@@ -284,7 +284,7 @@ The most common use for topological sort is ordering steps of a process where so
 
 ![https://github.com/donamj/Interview-Prep/blob/4b7d4f1092aec5e14ae0da17070440d5f590e712/Images/TopologicalSort_1.png](https://github.com/donamj/Interview-Prep/blob/4b7d4f1092aec5e14ae0da17070440d5f590e712/Images/TopologicalSort_1.png)
 
-![https://github.com/donamj/Interview-Prep/blob/4b7d4f1092aec5e14ae0da17070440d5f590e712/Images/TopologicalSort_2.png](.https://github.com/donamj/Interview-Prep/blob/4b7d4f1092aec5e14ae0da17070440d5f590e712/Images/TopologicalSort_2.png)
+![https://github.com/donamj/Interview-Prep/blob/4b7d4f1092aec5e14ae0da17070440d5f590e712/Images/TopologicalSort_2.png](https://github.com/donamj/Interview-Prep/blob/4b7d4f1092aec5e14ae0da17070440d5f590e712/Images/TopologicalSort_2.png)
 
 
 
