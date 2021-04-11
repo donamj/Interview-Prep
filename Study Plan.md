@@ -7,19 +7,19 @@ Concentrate on brushing up basics in the first week.
    - Longest common prefix
    - Add binary strings
    - Implement strstr
-3. Trees
+3. Stack
+4. Queue
+5. Linked List - Singley Linked, Doubly Linked, Circular
+6. Trees
    - Binary Tree
    - Binary Search Tree
    - [AVL Trees](https://www.baeldung.com/java-avl-trees)
    - Red Black Trees
-4. Tries
+7. Tries
    - Refer Leetcode
    - Compare performance of tries and hashmaps
-7. Stack
-8. Queue
-9. Linked List - Singley Linked, Doubly Linked, Circular
-10. [OOP](https://www.javatpoint.com/java-oops-concepts)
-11. Space and Time complexity
+8. [OOP](https://www.javatpoint.com/java-oops-concepts)
+9. Space and Time complexity
 
 
 ### **Week 2** 
