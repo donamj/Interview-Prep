@@ -5,6 +5,7 @@
 - [Serialize Tree](#serialize-tree)
 - [Deserialize Tree](#deserialize-tree)
 - [Check if tree is complete](#check-if-tree-is-complete)
+- [Check if a BST is valid](#check-if-a-bst-is-valid)
 
 <br>
 
@@ -200,3 +201,58 @@
         return true;
     }
 ```
+
+## Check if a BST is valid
+```
+    public boolean isValidBST(TreeNode root) 
+    {
+        return validate(root, null, null);
+    }
+    
+     public boolean validate(TreeNode root, Integer low, Integer high) 
+     {         
+         if(root == null)
+            return true;
+         
+         if((low != null && root.val <= low) || (high != null && root.val >= high))
+             return false;
+         
+         return validate(root.right, root.val, high) && validate(root.left, low, root.val);        
+    }
+``` 
+**Time complexity:** O(N) since we visit each node exactly once. <br>
+**Space complexity:** O(N) since we keep up to the entire tree. 
+
+<br>
+
+## Inorder successor in BST
+1. We start our traversal with the root node and continue the traversal until our current node reaches a null value i.e. there are no more nodes left to process.
+
+2. At each step we compare the value of node p with that of node.
+    - If p.val >= node.val that implies we can safely discard the left subtree since all the nodes there including the current node have values less than p.
+
+    - However, if p.val < node.val, that implies that the successor must lie in the left subtree and that the current node is a potential candidate for inorder successor. Thus, we update our local variable for keeping track of the successor, successor, to node.
+
+3. Return successor.
+
+```
+    public TreeNode inorderSuccessor(TreeNode root, TreeNode p)
+    {
+        
+        TreeNode successor = null;
+        
+        while (root != null) {
+            
+            if (p.val >= root.val) {
+                root = root.right;
+            } else {
+                successor = root;
+                root = root.left;
+            }
+        }
+        
+        return successor;
+    }
+```
+
+**Time Complexity:** O(N) since we might end up encountering a skewed tree and in that case, we will just be discarding one node at a time. 

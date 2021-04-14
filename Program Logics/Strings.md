@@ -3,6 +3,7 @@
 - [Find all sub strings of a string](#find-all-sub-strings-of-a-string)
 - [Add binary strings](#add-binary-strings)
 - [Sort an array of strings according to alphabetical order defined by another string](#sort-an-array-of-strings-according-to-alphabetical-order-defined-by-another-string)
+- [Find all anagrams](#find-all-anagrams)
 
 <br>
 
@@ -106,4 +107,21 @@ private static void sort(String[] strArr, String str)
 }
 ```
 
+<br>
 
+## Find all anagrams
+The idea is to move sliding window along the string s, recompute the second hashmap sCount in a constant time and compare it with the first hashmap pCount. If sCount == pCount, then the string in the sliding window is a permutation of string p, and one could add its start position in the output list.
+
+**Algorithm:**
+- Build reference counter pCount for string p.
+- Move sliding window along the string s:
+    - Recompute sliding window counter sCount at each step by adding one letter on the right and removing one letter on the left.
+    - If sCount == pCount, update the output list.
+
+- Return output list.
+
+**Time complexity:** <br>
+O(N_s + N_p), since it's one pass along both strings.
+
+**Space complexity:** <br>
+O(1), because pCount and sCount contain not more than 26 elements.

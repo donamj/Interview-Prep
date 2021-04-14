@@ -482,7 +482,7 @@ void printpairs(int arr[],int sum)
 <br>
 
 ## Diagonal Matrix
-![https://github.com/donamj/Interview-Prep/blob/4b7d4f1092aec5e14ae0da17070440d5f590e712/Images/DiagonalMatrix.png](https://github.com/donamj/Interview-Prep/blob/4b7d4f1092aec5e14ae0da17070440d5f590e712/Images/DiagonalMatrix.png)
+![https://github.com/donamj/Interview-Prep/blob/3e708c35dc95eff97d03ae44931455ac60b6b889/Images/DiagonalMatrix.png](https://github.com/donamj/Interview-Prep/blob/3e708c35dc95eff97d03ae44931455ac60b6b889/Images/DiagonalMatrix.png)
 ```
 class Solution {
     public int[] findDiagonalOrder(int[][] matrix) {
