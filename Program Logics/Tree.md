@@ -6,6 +6,7 @@
 - [Deserialize Tree](#deserialize-tree)
 - [Check if tree is complete](#check-if-tree-is-complete)
 - [Check if a BST is valid](#check-if-a-bst-is-valid)
+- [Sub tree of another tree](#sub-tree-of-another-tree)
 
 <br>
 
@@ -256,3 +257,29 @@
 ```
 
 **Time Complexity:** O(N) since we might end up encountering a skewed tree and in that case, we will just be discarding one node at a time. 
+
+
+## Sub tree of another tree
+```
+public class Solution 
+{
+    public boolean isSubtree(TreeNode s, TreeNode t) {
+        return traverse(s,t);
+    }
+    public boolean equals(TreeNode x,TreeNode y)
+    {
+        if(x==null && y==null)
+            return true;
+        if(x==null || y==null)
+            return false;
+        return x.val==y.val && equals(x.left,y.left) && equals(x.right,y.right);
+    }
+    public boolean traverse(TreeNode s,TreeNode t)
+    {
+        return  s!=null && ( equals(s,t) || traverse(s.left,t) || traverse(s.right,t));
+    }
+}
+```
+
+**Time complexity:** O(m*n) <br>
+**Space complexity:** O(n), the depth of the recursion tree can go upto n. n refers to the number of nodes in s.
