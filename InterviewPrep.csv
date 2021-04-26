@@ -1,234 +1,166 @@
 ﻿TYPE,CONTENT,PRIORITY,INDENT,AUTHOR,RESPONSIBLE,DATE,DATE_LANG,TIMEZONE
 meta,view_style=board,,,,,,,
-section,Google,,,,,,,
-task,Look into the project added in portfolio,1,1,Dona (31209856),,,en,America/Los_Angeles
-,,,,,,,,
-task,Prepare tell about yourself,1,1,Dona (31209856),,,en,America/Los_Angeles
-,,,,,,,,
-task,https://www.codinginterview.com/google-interview-questions,1,1,Dona (31209856),,,en,America/Los_Angeles
-,,,,,,,,
-task,https://www.coursera.org/specializations/algorithms#courses,4,1,Dona (31209856),,,en,America/Los_Angeles
-,,,,,,,,
+section,Resources,,,,,,,
 task,[Programming - InterviewBit](https://www.interviewbit.com/courses/programming/),4,1,Dona (31209856),,,en,America/Los_Angeles
 ,,,,,,,,
-task,https://www.youtube.com/playlist?list=PLA8lYuzFlBqAy6dkZHj5VxUAaqr4vwrka,4,1,Dona (31209856),,,en,America/Los_Angeles
+task,[System Design Template](https://leetcode.com/discuss/career/229177/My-System-Design-Template),4,1,Dona (31209856),,,en,America/Los_Angeles
 ,,,,,,,,
-task,[HiredInTech's Training Camp for Coding Interviews](https://www.hiredintech.com/courses/system-design),4,1,Dona (31209856),,,en,America/Los_Angeles
+task,Some Basics,4,1,Dona (31209856),,,en,America/Los_Angeles
 ,,,,,,,,
-task,[Grokking the System Design Interview - Learn Interactively](https://www.educative.io/courses/grokking-the-system-design-interview),4,1,Dona (31209856),,,en,America/Los_Angeles
+task,[How CPU executes a program (video)](https://www.youtube.com/watch?v=XM4lGflQFvA),4,2,Dona (31209856),,,en,America/Los_Angeles
 ,,,,,,,,
-task,Move google notes in one note to github,4,1,Dona (31209856),,,en,America/Los_Angeles
+task,[How computers calculate - ALU (video)](https://youtu.be/1I5ZMmrOfnA),4,2,Dona (31209856),,,en,America/Los_Angeles
 ,,,,,,,,
-task,Championship,4,1,Dona (31209856),,,en,America/Los_Angeles
+task,[Registers and RAM (video)](https://youtu.be/fpnE6UAfbtU),4,2,Dona (31209856),,,en,America/Los_Angeles
 ,,,,,,,,
-task,What tech stack,4,2,Dona (31209856),,,en,America/Los_Angeles
+task,[The Central Processing Unit (CPU) (video)](https://youtu.be/FZGugFqdr60),4,2,Dona (31209856),,,en,America/Los_Angeles
 ,,,,,,,,
-task,What work is done in the team,4,2,Dona (31209856),,,en,America/Los_Angeles
-,,,,,,,,
-task,How long is a sprint,4,2,Dona (31209856),,,en,America/Los_Angeles
-,,,,,,,,
-task,How many people in a team,4,2,Dona (31209856),,,en,America/Los_Angeles
-,,,,,,,,
-task,When is the fiscal year,4,2,Dona (31209856),,,en,America/Los_Angeles
-,,,,,,,,
-task,Any tips for interview prep?,4,2,Dona (31209856),,,en,America/Los_Angeles
-,,,,,,,,
-task,What was the biggest challenge when you joined the team?,4,2,Dona (31209856),,,en,America/Los_Angeles
-,,,,,,,,
-task,Are there test engineers in the team?,4,2,Dona (31209856),,,en,America/Los_Angeles
-,,,,,,,,
-section,Must,,,,,,,
-task,[K'th Smallest/Largest Element in Unsorted Array](https://www.geeksforgeeks.org/kth-smallestlargest-element-unsorted-array-set-2-expected-linear-time/),4,1,Dona (31209856),,,en,America/Los_Angeles
-,,,,,,,,
-task,[Valid Palindrome II](https://leetcode.com/problems/valid-palindrome-ii/solution/),4,1,Dona (31209856),,,en,America/Los_Angeles
-,,,,,,,,
-task,[Convert numbers to words](https://www.netjstech.com/2018/11/converting-numbers-to-words-java-program.html),4,1,Dona (31209856),,,en,America/Los_Angeles
-,,,,,,,,
-task,[Number of islands](https://leetcode.com/problems/number-of-islands/solution/),4,1,Dona (31209856),,,en,America/Los_Angeles
-,,,,,,,,
-task,[Detecting Cycles in a Directed Graph](https://www.baeldung.com/cs/detecting-cycles-in-directed-graph),4,1,Dona (31209856),,,en,America/Los_Angeles
-,,,,,,,,
-task,[Generate all permutations of a string Recursive and Iterative](https://www.techiedelight.com/generate-permutations-string-java-recursive-iterative/),4,1,Dona (31209856),,,en,America/Los_Angeles
-,,,,,,,,
-task,[Implement Trie](https://leetcode.com/problems/implement-trie-prefix-tree/solution/),4,1,Dona (31209856),,,en,America/Los_Angeles
-,,,,,,,,
-task,[Search Autocomplete](https://leetcode.com/problems/design-search-autocomplete-system/solution/),4,1,Dona (31209856),,,en,America/Los_Angeles
-,,,,,,,,
-task,[Subarray Sum Equals K](https://leetcode.com/problems/subarray-sum-equals-k/solution/),4,1,Dona (31209856),,,en,America/Los_Angeles
-,,,,,,,,
-section,Pending,,,,,,,
-task,Radix Sort,4,1,Dona (31209856),,,en,America/Los_Angeles
-,,,,,,,,
-task,Bucket Sort,4,1,Dona (31209856),,,en,America/Los_Angeles
-,,,,,,,,
-task,Quick Sort implementation,4,1,Dona (31209856),,,en,America/Los_Angeles
-,,,,,,,,
-task,[Palindrome Pair](https://leetcode.com/problems/palindrome-pairs/solution/),4,1,Dona (31209856),,,en,America/Los_Angeles
-,,,,,,,,
-task,Word squares leetcode,4,1,Dona (31209856),,,en,America/Los_Angeles
-,,,,,,,,
-task,Heap sort,4,1,Dona (31209856),,,en,America/Los_Angeles
-,,,,,,,,
-task,Tower of Hanoi,4,1,Dona (31209856),,,en,America/Los_Angeles
-,,,,,,,,
-task,Minimum spanning tree,4,1,Dona (31209856),,,en,America/Los_Angeles
-,,,,,,,,
-task,Cycle detection in graph,4,1,Dona (31209856),,,en,America/Los_Angeles
-,,,,,,,,
-task,[Recursion](https://leetcode.com/explore/interview/card/google/62/recursion-4/370/),4,1,Dona (31209856),,,en,America/Los_Angeles
-,,,,,,,,
-task,[Word Search II](https://leetcode.com/problems/word-search-ii/solution/),4,1,Dona (31209856),,,en,America/Los_Angeles
-,,,,,,,,
-task,[AVL Trees](https://www.baeldung.com/java-avl-trees),4,1,Dona (31209856),,,en,America/Los_Angeles
+task,[Instructions and Programs (video)](https://youtu.be/zltgXvg6r3k),4,2,Dona (31209856),,,en,America/Los_Angeles
 ,,,,,,,,
 section,Topics,,,,,,,
-task,Array @Week_1,4,1,Dona (31209856),,,en,America/Los_Angeles
+task,Array,4,1,Dona (31209856),,,en,America/Los_Angeles
 ,,,,,,,,
 task,[AlgoDaily - Daily coding interview questions. Full programming interview prep course and software career coaching.](https://algodaily.com/lessons/an-executable-data-structures-cheat-sheet),4,2,Dona (31209856),,,en,America/Los_Angeles
 ,,,,,,,,
-task,Leetcode problems,4,2,Dona (31209856),,,en,America/Los_Angeles
-,,,,,,,,
-task,String @Week_1,4,1,Dona (31209856),,,en,America/Los_Angeles
+task,String,4,1,Dona (31209856),,,en,America/Los_Angeles
 ,,,,,,,,
 task,https://algodaily.com/lessons/an-executable-data-structures-cheat-sheet - Easy String Interview,4,2,Dona (31209856),,,en,America/Los_Angeles
 ,,,,,,,,
-task,Leetcode,4,2,Dona (31209856),,,en,America/Los_Angeles
+task,Refer book Competitive Programmers Guide - Chapter 26,4,2,Dona (31209856),,,en,America/Los_Angeles
 ,,,,,,,,
-task,Longest common prefix,4,3,Dona (31209856),,,en,America/Los_Angeles
+task,"LinkedList - Singly Linked, Doubly Linked, Circular",4,1,Dona (31209856),,,en,America/Los_Angeles
 ,,,,,,,,
-task,Add binary,4,3,Dona (31209856),,,en,America/Los_Angeles
+task,Stack,4,1,Dona (31209856),,,en,America/Los_Angeles
 ,,,,,,,,
-task,Implement strstr,4,3,Dona (31209856),,,en,America/Los_Angeles
+task,Queue,4,1,Dona (31209856),,,en,America/Los_Angeles
 ,,,,,,,,
-task,"LinkedList - Singly Linked, Doubly Linked, Circular @Week_1",4,1,Dona (31209856),,,en,America/Los_Angeles
-,,,,,,,,
-task,Stack @Week_1,4,1,Dona (31209856),,,en,America/Los_Angeles
-,,,,,,,,
-task,Queue @Week_1,4,1,Dona (31209856),,,en,America/Los_Angeles
-,,,,,,,,
-task,Tree @Week_1,4,1,Dona (31209856),,,en,America/Los_Angeles
+task,Tree,4,1,Dona (31209856),,,en,America/Los_Angeles
 ,,,,,,,,
 task,Binary Tree,4,2,Dona (31209856),,,en,America/Los_Angeles
 ,,,,,,,,
 task,Red Black Tree,4,2,Dona (31209856),,,en,America/Los_Angeles
 ,,,,,,,,
+task,AVL Tree - https://www.baeldung.com/java-avl-trees,4,2,Dona (31209856),,,en,America/Los_Angeles
+,,,,,,,,
 task,BST,4,2,Dona (31209856),,,en,America/Los_Angeles
 ,,,,,,,,
-task,AVL - https://www.baeldung.com/java-avl-trees,4,2,Dona (31209856),,,en,America/Los_Angeles
-,,,,,,,,
-task,Tries @Week_1,4,1,Dona (31209856),,,en,America/Los_Angeles
+task,Tries,4,1,Dona (31209856),,,en,America/Los_Angeles
 ,,,,,,,,
 task,[Explore - LeetCode](https://leetcode.com/explore/learn/card/trie/),4,2,Dona (31209856),,,en,America/Los_Angeles
 ,,,,,,,,
 task,Compare performance of tries and hashmap,4,2,Dona (31209856),,,en,America/Los_Angeles
 ,,,,,,,,
-task,Space Complexity @Week_1,4,1,Dona (31209856),,,en,America/Los_Angeles
+task,Space and Time complexity,4,1,Dona (31209856),,,en,America/Los_Angeles
 ,,,,,,,,
-task,Time Complexity @Week_1,4,1,Dona (31209856),,,en,America/Los_Angeles
+task,Refer book Competitive Programmers Guide - Chapter 8,4,2,Dona (31209856),,,en,America/Los_Angeles
 ,,,,,,,,
-task,OOP @Week_1,4,1,Dona (31209856),,,en,America/Los_Angeles
+task,OOP,4,1,Dona (31209856),,,en,America/Los_Angeles
 ,,,,,,,,
-task,Search @Week_2,4,1,Dona (31209856),,,en,America/Los_Angeles
+task,[Grokking the Object Oriented Design Interview - Learn Interactively](https://www.educative.io/courses/grokking-the-object-oriented-design-interview),4,2,Dona (31209856),,,en,America/Los_Angeles
 ,,,,,,,,
-task,Interpolation Search,4,2,Dona (31209856),,,en,America/Los_Angeles
+task,Search,4,1,Dona (31209856),,,en,America/Los_Angeles
 ,,,,,,,,
 task,Linear search,4,2,Dona (31209856),,,en,America/Los_Angeles
 ,,,,,,,,
 task,Binary search,4,2,Dona (31209856),,,en,America/Los_Angeles
 ,,,,,,,,
-task,Sorting @Week_2,4,1,Dona (31209856),,,en,America/Los_Angeles
+task,Interpolation search,4,2,Dona (31209856),,,en,America/Los_Angeles
 ,,,,,,,,
-task,Radix sort,4,2,Dona (31209856),,,en,America/Los_Angeles
-,,,,,,,,
-task,Bucket sort,4,2,Dona (31209856),,,en,America/Los_Angeles
-,,,,,,,,
-task,Tree sort,4,2,Dona (31209856),,,en,America/Los_Angeles
-,,,,,,,,
-task,Quick sort,4,2,Dona (31209856),,,en,America/Los_Angeles
-,,,,,,,,
-task,Merge sort,4,2,Dona (31209856),,,en,America/Los_Angeles
-,,,,,,,,
-task,Shell sort,4,2,Dona (31209856),,,en,America/Los_Angeles
-,,,,,,,,
-task,Selection sort,4,2,Dona (31209856),,,en,America/Los_Angeles
-,,,,,,,,
-task,Insertion sort,4,2,Dona (31209856),,,en,America/Los_Angeles
+task,Sorting,4,1,Dona (31209856),,,en,America/Los_Angeles
 ,,,,,,,,
 task,Bubble sort,4,2,Dona (31209856),,,en,America/Los_Angeles
 ,,,,,,,,
-task,Graphs @Week_2,4,1,Dona (31209856),,,en,America/Los_Angeles
+task,Insertion sort,4,2,Dona (31209856),,,en,America/Los_Angeles
+,,,,,,,,
+task,Selection sort,4,2,Dona (31209856),,,en,America/Los_Angeles
+,,,,,,,,
+task,Merge sort,4,2,Dona (31209856),,,en,America/Los_Angeles
+,,,,,,,,
+task,Quick sort,4,2,Dona (31209856),,,en,America/Los_Angeles
+,,,,,,,,
+task,Shell sort,4,2,Dona (31209856),,,en,America/Los_Angeles
+,,,,,,,,
+task,Tree sort,4,2,Dona (31209856),,,en,America/Los_Angeles
+,,,,,,,,
+task,Bucket sort,4,2,Dona (31209856),,,en,America/Los_Angeles
+,,,,,,,,
+task,Radix sort,4,2,Dona (31209856),,,en,America/Los_Angeles
+,,,,,,,,
+task,Heap sort,4,2,Dona (31209856),,,en,America/Los_Angeles
+,,,,,,,,
+task,Graph,4,1,Dona (31209856),,,en,America/Los_Angeles
 ,,,,,,,,
 task,"Graph representation : There are 3 basic ways to represent a graph in memory (objects and pointers, matrix, and adjacency list); familiarize yourself with each representation and its pros & con.",4,2,Dona (31209856),,,en,America/Los_Angeles
 ,,,,,,,,
-task,Advantages and disadvantages : https://www.algolist.net/Data_structures/Graph/Internal_representation,4,3,Dona (31209856),,,en,America/Los_Angeles
-,,,,,,,,
 task,[Graphs in Java: Representing Graphs in Code](https://stackabuse.com/graphs-in-java-representing-graphs-in-code/),4,3,Dona (31209856),,,en,America/Los_Angeles
 ,,,,,,,,
-task,Minimal spanning tree,4,2,Dona (31209856),,,en,America/Los_Angeles
+task,[Graph Representation Tutorials & Notes | Algorithms | HackerEarth](https://www.hackerearth.com/practice/algorithms/graphs/graph-representation/tutorial/),4,3,Dona (31209856),,,en,America/Los_Angeles
+,,,,,,,,
+task,Advantages and disadvantages : https://www.algolist.net/Data_structures/Graph/Internal_representation,4,3,Dona (31209856),,,en,America/Los_Angeles
+,,,,,,,,
+task,Minimal Spanning Tree,4,2,Dona (31209856),,,en,America/Los_Angeles
 ,,,,,,,,
 task,[Kruskal’s Algorithm for Spanning Trees with a Java Implementation | Baeldung](https://www.baeldung.com/java-spanning-trees-kruskal),4,3,Dona (31209856),,,en,America/Los_Angeles
 ,,,,,,,,
 task,[Prim’s Algorithm with a Java Implementation | Baeldung](https://www.baeldung.com/java-prim-algorithm),4,3,Dona (31209856),,,en,America/Los_Angeles
 ,,,,,,,,
-task,[Graph Representation Tutorials & Notes | Algorithms | HackerEarth](https://www.hackerearth.com/practice/algorithms/graphs/graph-representation/tutorial/),4,2,Dona (31209856),,,en,America/Los_Angeles
-,,,,,,,,
-task,Shortest path algorithm,4,2,Dona (31209856),,,en,America/Los_Angeles
+task,Shortest Path Algorithm,4,2,Dona (31209856),,,en,America/Los_Angeles
 ,,,,,,,,
 task,[Dijkstra Algorithm in Java | Baeldung](https://www.baeldung.com/java-dijkstra),4,3,Dona (31209856),,,en,America/Los_Angeles
 ,,,,,,,,
-task,Topological sort,4,2,Dona (31209856),,,en,America/Los_Angeles
+task,Topological Sort,4,2,Dona (31209856),,,en,America/Los_Angeles
 ,,,,,,,,
-task,"BFS and DFS -  Know their computational complexity, their tradeoffs, and how to implement them in real code.",4,2,Dona (31209856),,,en,America/Los_Angeles
+task,BFS and DFS,4,2,Dona (31209856),,,en,America/Los_Angeles
+,,,,,,,,
+task,"Know their computational complexity, their tradeoffs, and how to implement them in real code.",4,3,Dona (31209856),,,en,America/Los_Angeles
 ,,,,,,,,
 task,[Graph Implementation and Traversal Algorithms (Java) | Section](https://www.section.io/engineering-education/graph-traversals-java/),4,3,Dona (31209856),,,en,America/Los_Angeles
 ,,,,,,,,
-task,Algorithms @Week_2,4,1,Dona (31209856),,,en,America/Los_Angeles
+task,Algorithms,4,1,Dona (31209856),,,en,America/Los_Angeles
 ,,,,,,,,
-task,A star alogrithm,4,2,Dona (31209856),,,en,America/Los_Angeles
+task,https://www.coursera.org/specializations/algorithms#courses,4,2,Dona (31209856),,,en,America/Los_Angeles
+,,,,,,,,
+task,A star algorithm,4,2,Dona (31209856),,,en,America/Los_Angeles
 ,,,,,,,,
 task,Travelling sales man,4,2,Dona (31209856),,,en,America/Los_Angeles
 ,,,,,,,,
-task,Knapsack,4,2,Dona (31209856),,,en,America/Los_Angeles
+task,Knapsack - [How to solve the Knapsack Problem with dynamic programming](https://medium.com/@fabianterh/how-to-solve-the-knapsack-problem-with-dynamic-programming-eb88c706d3cf),4,2,Dona (31209856),,,en,America/Los_Angeles
 ,,,,,,,,
-task,[How to solve the Knapsack Problem with dynamic programming](https://medium.com/@fabianterh/how-to-solve-the-knapsack-problem-with-dynamic-programming-eb88c706d3cf),4,3,Dona (31209856),,,en,America/Los_Angeles
+task,NP Complete - Chapter 20 : DS and Algo Karumanchi text,4,2,Dona (31209856),,,en,America/Los_Angeles
 ,,,,,,,,
-task,NP complete,4,2,Dona (31209856),,,en,America/Los_Angeles
-,,,,,,,,
-task,Chapter 20 - DS and Algo Karumanchi text,4,3,Dona (31209856),,,en,America/Los_Angeles
-,,,,,,,,
-task,N choose K problems,4,2,Dona (31209856),,,en,America/Los_Angeles
-,,,,,,,,
-task,Rabin Karp - strstr,4,2,Dona (31209856),,,en,America/Los_Angeles
+task,RabinKarp - strstr,4,2,Dona (31209856),,,en,America/Los_Angeles
 ,,,,,,,,
 task,Greedy,4,2,Dona (31209856),,,en,America/Los_Angeles
 ,,,,,,,,
-task,Divide and conquer,4,2,Dona (31209856),,,en,America/Los_Angeles
+task,Refer book Competitive Programmers Guide - Chapter 6,4,3,Dona (31209856),,,en,America/Los_Angeles
 ,,,,,,,,
-task,Dijkstras,4,2,Dona (31209856),,,en,America/Los_Angeles
+task,Divide and Conquer,4,2,Dona (31209856),,,en,America/Los_Angeles
 ,,,,,,,,
-task,Hash tables @Week_3,4,1,Dona (31209856),,,en,America/Los_Angeles
+task,Dijktras,4,2,Dona (31209856),,,en,America/Los_Angeles
+,,,,,,,,
+task,Hash tables,4,1,Dona (31209856),,,en,America/Los_Angeles
 ,,,,,,,,
 task,Implement hash maps and hash tables using arrays,4,2,Dona (31209856),,,en,America/Los_Angeles
 ,,,,,,,,
 task,How does hash tables work?,4,2,Dona (31209856),,,en,America/Los_Angeles
 ,,,,,,,,
-task,What is the difference bw hash tables and hash maps,4,2,Dona (31209856),,,en,America/Los_Angeles
+task,What is the difference between hash tables and hash maps,4,2,Dona (31209856),,,en,America/Los_Angeles
 ,,,,,,,,
-task,Recursion @Week_3,4,1,Dona (31209856),,,en,America/Los_Angeles
+task,Recursion,4,1,Dona (31209856),,,en,America/Los_Angeles
 ,,,,,,,,
-task,Dynamic programming @Week_3,4,1,Dona (31209856),,,en,America/Los_Angeles
+task,Dynamic Programming,4,1,Dona (31209856),,,en,America/Los_Angeles
 ,,,,,,,,
 task,[What is Dynamic Programming? - Grokking Dynamic Programming Patterns for Coding Interviews](https://www.educative.io/courses/grokking-dynamic-programming-patterns-for-coding-interviews/m2G1pAq0OO0),4,2,Dona (31209856),,,en,America/Los_Angeles
 ,,,,,,,,
-task,Priority Queues and Heaps @Week_3,4,1,Dona (31209856),,,en,America/Los_Angeles
+task,Priority Queues and Heaps,4,1,Dona (31209856),,,en,America/Los_Angeles
 ,,,,,,,,
-task,Backtracking @Week_3,4,1,Dona (31209856),,,en,America/Los_Angeles
+task,Backtracking,4,1,Dona (31209856),,,en,America/Los_Angeles
 ,,,,,,,,
-task,[backtracking](https://cs.lmu.edu/~ray/notes/backtracking/),4,2,Dona (31209856),,,en,America/Los_Angeles
+task,[Backtracking](https://cs.lmu.edu/~ray/notes/backtracking/),4,2,Dona (31209856),,,en,America/Los_Angeles
 ,,,,,,,,
 task,N Queens,4,2,Dona (31209856),,,en,America/Los_Angeles
 ,,,,,,,,
-task,Behavioural @Week_4,4,1,Dona (31209856),,,en,America/Los_Angeles
+task,Behavioural,4,1,Dona (31209856),,,en,America/Los_Angeles
 ,,,,,,,,
 task,[Top 30 Google Interview Questions (Example Answers Included)](https://theinterviewguys.com/google-interview-questions/),4,2,Dona (31209856),,,en,America/Los_Angeles
 ,,,,,,,,
@@ -238,15 +170,19 @@ task,[Behavioral Interviews: how to prepare and ace interview questions](https:/
 ,,,,,,,,
 task,[Microsoft OneDrive - Access files anywhere. Create docs with free Office Online.](https://onedrive.live.com/redir?resid=FB246C7781C6B5A7%21136&page=Edit&wd=target%28Google%20Interview%20Prep.one%7Ced3d7136-c10e-4eb5-b78b-75f0da27bdb0%2FBehavioural%7C6f06d2e1-e3a4-453f-b2cf-806db260988e%2F%29&wdorigin=703),4,2,Dona (31209856),,,en,America/Los_Angeles
 ,,,,,,,,
-task,Basics of how search works @Week_4,4,1,Dona (31209856),,,en,America/Los_Angeles
+task,Company Specific - Google,4,1,Dona (31209856),,,en,America/Los_Angeles
 ,,,,,,,,
 task,[How Google Search Works for Beginners | Google Search Central](https://developers.google.com/search/docs/basics/how-search-works),4,2,Dona (31209856),,,en,America/Los_Angeles
 ,,,,,,,,
 task,[How Google's Site Crawlers Index Your Site - Google Search](https://www.google.com/search/howsearchworks/crawling-indexing/),4,2,Dona (31209856),,,en,America/Los_Angeles
 ,,,,,,,,
-task,Cloud @Week_4,4,1,Dona (31209856),,,en,America/Los_Angeles
+task,Basics of how search works,4,2,Dona (31209856),,,en,America/Los_Angeles
 ,,,,,,,,
-task,Operating Systems @Week_4,4,1,Dona (31209856),,,en,America/Los_Angeles
+task,[Google Coding Interview Questions: top 18 questions explained](https://www.educative.io/blog/google-coding-interview-questions),4,2,Dona (31209856),,,en,America/Los_Angeles
+,,,,,,,,
+task,https://www.codinginterview.com/google-interview-questions,4,2,Dona (31209856),,,en,America/Los_Angeles
+,,,,,,,,
+task,Operating Systems,4,1,Dona (31209856),,,en,America/Los_Angeles
 ,,,,,,,,
 task,[Multithreading and Concurrency Fundamentals](https://www.educative.io/blog/multithreading-and-concurrency-fundamentals),4,2,Dona (31209856),,,en,America/Los_Angeles
 ,,,,,,,,
@@ -262,58 +198,47 @@ task,[Mutex vs Semaphore - GeeksforGeeks](https://www.geeksforgeeks.org/mutex-vs
 ,,,,,,,,
 task,Resource allocation,4,2,Dona (31209856),,,en,America/Los_Angeles
 ,,,,,,,,
-task,"Process, Threads",4,2,Dona (31209856),,,en,America/Los_Angeles
+task,Process,4,2,Dona (31209856),,,en,America/Los_Angeles
 ,,,,,,,,
-task,Bitwise Operators @Week_4,4,1,Dona (31209856),,,en,America/Los_Angeles
+task,Threads,4,2,Dona (31209856),,,en,America/Los_Angeles
 ,,,,,,,,
-task,Learn more about company @Week_4,4,1,Dona (31209856),,,en,America/Los_Angeles
+task,Bitwise Operators,4,1,Dona (31209856),,,en,America/Los_Angeles
 ,,,,,,,,
-task,System Design @If_time_permits,4,1,Dona (31209856),,,en,America/Los_Angeles
+task,Refer book Competitive Programmers Guide - Chapter 10,4,2,Dona (31209856),,,en,America/Los_Angeles
 ,,,,,,,,
-task,[HiredInTech's Training Camp for Coding Interviews](https://www.hiredintech.com/classrooms/system-design/lesson/52),4,2,Dona (31209856),,,en,America/Los_Angeles
+task,System Design,4,1,Dona (31209856),,,en,America/Los_Angeles
 ,,,,,,,,
-task,Design Patterns @If_time_permits,4,1,Dona (31209856),,,en,America/Los_Angeles
+task,Design Patterns,4,1,Dona (31209856),,,en,America/Los_Angeles
 ,,,,,,,,
-task,Probability @If_time_permits,4,1,Dona (31209856),,,en,America/Los_Angeles
+task,Common Questions,4,1,Dona (31209856),,,en,America/Los_Angeles
 ,,,,,,,,
-section,Focus,,,,,,,
-section,Current,,,,,,,
-task,Refer Everyday,1,1,Dona (31209856),,,en,America/Los_Angeles
+task,[Implement Trie](https://leetcode.com/problems/implement-trie-prefix-tree/solution/),4,2,Dona (31209856),,,en,America/Los_Angeles
 ,,,,,,,,
-task,[AlgoDaily - Daily coding interview questions. Full programming interview prep course and software career coaching.](https://algodaily.com/lessons/an-executable-data-structures-cheat-sheet),1,2,Dona (31209856),,,en,America/Los_Angeles
+task,Tower of Hanoi,4,2,Dona (31209856),,,en,America/Los_Angeles
 ,,,,,,,,
-task,[jwasham/coding-interview-university](https://github.com/jwasham/coding-interview-university#data-structures),4,2,Dona (31209856),,,en,America/Los_Angeles
+task,[Detecting Cycles in a Directed Graph](https://www.baeldung.com/cs/detecting-cycles-in-directed-graph),4,2,Dona (31209856),,,en,America/Los_Angeles
 ,,,,,,,,
-task,[TSiege/Tech-Interview-Cheat-Sheet](https://github.com/TSiege/Tech-Interview-Cheat-Sheet),4,2,Dona (31209856),,,en,America/Los_Angeles
+task,[Number of islands](https://leetcode.com/problems/number-of-islands/solution/),4,2,Dona (31209856),,,en,America/Los_Angeles
 ,,,,,,,,
-task,[Technical Interview Preparation - Data Structures and Algorithms - HackMD](https://hackmd.io/@nesquena/SJIV-n7B?type=view),4,2,Dona (31209856),,,en,America/Los_Angeles
+task,[Convert numbers to words](https://www.netjstech.com/2018/11/converting-numbers-to-words-java-program.html),4,2,Dona (31209856),,,en,America/Los_Angeles
 ,,,,,,,,
-task,[Algorithms and Data Structures Cheatsheet](https://algs4.cs.princeton.edu/cheatsheet/),4,2,Dona (31209856),,,en,America/Los_Angeles
+task,[K'th Smallest/Largest Element in Unsorted Array](https://www.geeksforgeeks.org/kth-smallestlargest-element-unsorted-array-set-2-expected-linear-time/),4,2,Dona (31209856),,,en,America/Los_Angeles
 ,,,,,,,,
-task,https://gist.github.com/TSiege/cbb0507082bb18ff7e4b,4,2,Dona (31209856),,,en,America/Los_Angeles
+task,[Generate all permutations of a string Recursive and Iterative](https://www.techiedelight.com/generate-permutations-string-java-recursive-iterative/),4,2,Dona (31209856),,,en,America/Los_Angeles
 ,,,,,,,,
-task,"[Data structures cheat sheet, for coding interviews and computer science classes | Interview Cake](https://www.interviewcake.com/data-structures-reference)",4,2,Dona (31209856),,,en,America/Los_Angeles
+task,[Search Autocomplete](https://leetcode.com/problems/design-search-autocomplete-system/solution/),4,2,Dona (31209856),,,en,America/Los_Angeles
 ,,,,,,,,
-task,Common questions,1,1,Dona (31209856),,,en,America/Los_Angeles
-,,,,,,,,
-task,[Google Coding Interview Questions: top 18 questions explained](https://www.educative.io/blog/google-coding-interview-questions),4,2,Dona (31209856),,,en,America/Los_Angeles
-,,,,,,,,
-task,[Grokking the Object Oriented Design Interview - Learn Interactively](https://www.educative.io/courses/grokking-the-object-oriented-design-interview),4,2,Dona (31209856),,,en,America/Los_Angeles
-,,,,,,,,
-task,[About - Project Euler](https://projecteuler.net/),4,2,Dona (31209856),,,en,America/Los_Angeles
-,,,,,,,,
-task,[Minimum size sub array](https://leetcode.com/problems/minimum-size-subarray-sum/solution/),4,2,Dona (31209856),,,en,America/Los_Angeles
+task,[Subarray Sum Equals K](https://leetcode.com/problems/subarray-sum-equals-k/solution/),4,2,Dona (31209856),,,en,America/Los_Angeles
 ,,,,,,,,
 task,[Rotate array](https://leetcode.com/problems/rotate-array/solution/),4,2,Dona (31209856),,,en,America/Los_Angeles
 ,,,,,,,,
-task,LRU cache implementation,4,2,Dona (31209856),,,en,America/Los_Angeles
+task,[Minimum size sub array](https://leetcode.com/problems/minimum-size-subarray-sum/solution/),4,2,Dona (31209856),,,en,America/Los_Angeles
 ,,,,,,,,
-task,Master theorem,4,2,Dona (31209856),,,en,America/Los_Angeles
+task,Cloud,4,1,Dona (31209856),,,en,America/Los_Angeles
 ,,,,,,,,
-task,Evaluate Reverse Polish NotationSolution,4,2,Dona (31209856),,,en,America/Los_Angeles
+task,[Cloud design patterns - Azure Architecture Center](https://docs.microsoft.com/en-us/azure/architecture/patterns/),4,2,Dona (31209856),,,en,America/Los_Angeles
 ,,,,,,,,
-task,Karumanchi DS book,1,1,Dona (31209856),,,en,America/Los_Angeles
-,,,,,,,,
-task,Tech talks,1,1,Dona (31209856),,,en,America/Los_Angeles
-,,,,,,,,
+section,Focus,,,,,,,
+section,Current,,,,,,,
 section,Covered,,,,,,,
+section,Pending,,,,,,,
