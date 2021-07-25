@@ -1,6 +1,6 @@
 # How to track your progress?
 
-I use [Todoist](https://todoist.com/) to track my progress. Here is [template](https://github.com/donamj/Interview-Prep/blob/main/Tracking%20Progress.md) to the method I followed.
+I use [Todoist](https://todoist.com/) to track my progress.
 
 There are mainly 4 sections:
 1. **Topics** - Add all the topics that you have planned to learn. 

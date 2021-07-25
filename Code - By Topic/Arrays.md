@@ -16,7 +16,8 @@
 - [Find all pairs in an array with a given sum](#find-all-pairs-in-an-array-with-a-given-sum)
 - [Diagonal Matrix](#diagonal-matrix)
 - [Count of smaller numbers after self](#count-of-smaller-numbers-after-self)
-
+- [Find whether an array is a subset of another array](#find-whether-an-array-is-a-subset-of-another-array)
+- [Rotate an array](#rotate-an-array)
 
 <br>
 
@@ -584,4 +585,97 @@ public class Solution {
         }
     }
 }
+```
+<br/>
+
+## Find whether an array is a subset of another array
+```
+static boolean isSubset(int arr1[], int arr2[]) {
+    HashSet<Integer> set= new HashSet<>(); 
+    
+    for(int i = 0; i < arr1.length; i++) { 
+      set.add(arr1[i]); 
+    } 
+
+    for(int i = 0; i < arr2.length; i++) { 
+      if(!set.contains(arr2[i])) 
+        return false; 
+    } 
+    return true; 
+  }
+```
+Time complexity is O(m+n).
+<br/>
+
+## Rotate an array
+Using Array Reversal:
+1. Reverse the array elements from 0 to k-1.
+2. Reverse the array elements from k to array.length-1.
+3. Reverse the whole array.
+
+<br/>
+Example: 1 2 3 4 5 <br/>
+k = 3<br/><br/>
+Step 1. Reverse the array elements from 0 to 2: 3 2 1 4 5<br/>
+Step 2. Reverse the array elements from 3 to 4: 3 2 1 5 4<br/>
+Step 3. Reverse the whole array: 4 5 1 2 3<br/>
+<br/>
+Time Complexity: O(n)<br/>
+Space Complexity: O(1)
+<br/><br/>
+
+```
+ static void rotateArray(List<Integer> arr, int n) {
+
+    int len = arr.size();
+    // Let's normalize rotations
+    // if n > array size or n is negative.
+    n = n % len;
+    if (n < 0) {
+      // calculate the positive rotations needed.
+      n = n + len;
+    }
+
+    reverseArray(arr, 0, len-1);
+    reverseArray(arr, 0, n-1);
+    reverseArray(arr, n, len-1);
+  }
+```
+
+## Stock buy sell to maximize profit
+Uses Kadane's alogrithm
+
+Time complexity : O(n)
+
+Space complexity : O(1)
+```
+public static Tuple findBuySellStockPrices(int[] array) {
+    if(array == null || array.length < 2) {
+        return null;
+      }
+
+    int current_buy = array[0];
+    int global_sell = array[1];
+    int global_profit = global_sell - current_buy;
+
+    int current_profit = Integer.MIN_VALUE;
+  
+    for(int i=1; i<array.length; i++) {
+      current_profit = array[i] - current_buy;
+  
+      if(current_profit > global_profit) {
+        global_profit = current_profit;
+        global_sell = array[i];
+      }
+
+      if(current_buy > array[i]) {
+        current_buy = array[i];
+      }
+    }
+
+    Tuple<Integer, Integer> result = 
+      new Tuple<Integer, Integer>(global_sell - global_profit, global_sell);
+
+    return result;
+  }
 ```
