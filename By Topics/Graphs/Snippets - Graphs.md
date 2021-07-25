@@ -66,7 +66,7 @@ void recursiveDFS(MyGraph g, String vertex, Set<String> visitedRecur)
 ```
 <br>
 
-![.https://github.com/donamj/Interview-Prep/blob/4b7d4f1092aec5e14ae0da17070440d5f590e712/Assets/DFS_Util.png](https://github.com/donamj/Interview-Prep/blob/4b7d4f1092aec5e14ae0da17070440d5f590e712/Assets/DFS_Util.png)
+![https://github.com/donamj/Interview-Prep/blob/4d1f8b75605817ba01c6273be5402c565fc0d580/Assets/DFS_Util.png](https://github.com/donamj/Interview-Prep/blob/4d1f8b75605817ba01c6273be5402c565fc0d580/Assets/DFS_Util.png)
 
 <br>
 
@@ -97,7 +97,7 @@ Set<String> BFS(MyGraph g)
 ```
 <br>
 
-![https://github.com/donamj/Interview-Prep/blob/4b7d4f1092aec5e14ae0da17070440d5f590e712/Assets/BFS.png](https://github.com/donamj/Interview-Prep/blob/4b7d4f1092aec5e14ae0da17070440d5f590e712/Assets/BFS.png)
+![https://github.com/donamj/Interview-Prep/blob/4d1f8b75605817ba01c6273be5402c565fc0d580/Assets/BFS.png](https://github.com/donamj/Interview-Prep/blob/4d1f8b75605817ba01c6273be5402c565fc0d580/Assets/BFS.png)
 
 <br>
 
@@ -282,9 +282,9 @@ void BellmanFord(Graph graph,int src)
 # Topological Sort
 The most common use for topological sort is ordering steps of a process where some the steps depend on each other.
 
-![https://github.com/donamj/Interview-Prep/blob/4b7d4f1092aec5e14ae0da17070440d5f590e712/Assets/TopologicalSort_1.png](https://github.com/donamj/Interview-Prep/blob/4b7d4f1092aec5e14ae0da17070440d5f590e712/Assets/TopologicalSort_1.png)
+![https://github.com/donamj/Interview-Prep/blob/4d1f8b75605817ba01c6273be5402c565fc0d580/Assets/TopologicalSort_1.png](https://github.com/donamj/Interview-Prep/blob/4d1f8b75605817ba01c6273be5402c565fc0d580/Assets/TopologicalSort_1.png)
 
-![https://github.com/donamj/Interview-Prep/blob/4b7d4f1092aec5e14ae0da17070440d5f590e712/Assets/TopologicalSort_2.png](https://github.com/donamj/Interview-Prep/blob/4b7d4f1092aec5e14ae0da17070440d5f590e712/Assets/TopologicalSort_2.png)
+![https://github.com/donamj/Interview-Prep/blob/4d1f8b75605817ba01c6273be5402c565fc0d580/Assets/TopologicalSort_2.png](https://github.com/donamj/Interview-Prep/blob/4d1f8b75605817ba01c6273be5402c565fc0d580/Assets/TopologicalSort_2.png)
 
 
 

@@ -119,7 +119,7 @@ For example, When sorting a file which doesn’t fit into memory, you might brea
 
 4. If there is a lot of parallelization occurs then parallelizing Merge sort is simpler than other sort algorithms.
 
-    ![https://github.com/donamj/Interview-Prep/blob/4b7d4f1092aec5e14ae0da17070440d5f590e712/Assets/MergeSort.png](https://github.com/donamj/Interview-Prep/blob/4b7d4f1092aec5e14ae0da17070440d5f590e712/Assets/MergeSort.png)
+    ![https://github.com/donamj/Interview-Prep/blob/4d1f8b75605817ba01c6273be5402c565fc0d580/Assets/MergeSort.png](https://github.com/donamj/Interview-Prep/blob/4d1f8b75605817ba01c6273be5402c565fc0d580/Assets/MergeSort.png)
 
 # Quick Sort
 Following are the steps involved in quick sort algorithm:
@@ -133,7 +133,7 @@ Following are the steps involved in quick sort algorithm:
 
 5. Then we pick subarrays, elements on the left of pivot and elements on the right of pivot, and we perform partitioning on them by choosing a pivot in the subarrays.
 
-    ![https://github.com/donamj/Interview-Prep/blob/4b7d4f1092aec5e14ae0da17070440d5f590e712/Assets/QuickSort.png](https://github.com/donamj/Interview-Prep/blob/4b7d4f1092aec5e14ae0da17070440d5f590e712/Assets/QuickSort.png)
+    ![https://github.com/donamj/Interview-Prep/blob/4d1f8b75605817ba01c6273be5402c565fc0d580/Assets/QuickSort.png](https://github.com/donamj/Interview-Prep/blob/4d1f8b75605817ba01c6273be5402c565fc0d580/Assets/QuickSort.png)
 
 
 **With middle element as pivot**

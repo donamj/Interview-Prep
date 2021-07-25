@@ -7,49 +7,44 @@
 - [Useful Links](https://github.com/donamj/Interview-Prep/blob/main/How%20to%20prepare!/Useful%20Links.md)
 - [Where to study from?](https://github.com/donamj/Interview-Prep/blob/main/How%20to%20prepare!/Where%20to%20study%20from.md)
 
-<br/>
-
 # Notes by topic
-- [Algorithms](https://github.com/donamj/Interview-Prep/blob/4d1f8b75605817ba01c6273be5402c565fc0d580/Notes%20by%20topic/Algorithms.md)
+- [Algorithms](https://github.com/donamj/Interview-Prep/blob/main/By%20Topics/Algorithms/Algorithms.md)
 - [Bit Manipulation](https://github.com/donamj/Interview-Prep/blob/4d1f8b75605817ba01c6273be5402c565fc0d580/Notes%20by%20topic/Bit%20Manipulation.md)
-- [Concurrency](https://github.com/donamj/Interview-Prep/blob/4d1f8b75605817ba01c6273be5402c565fc0d580/Notes%20by%20topic/Concurrency.md)
-- [Graphs](https://github.com/donamj/Interview-Prep/blob/4d1f8b75605817ba01c6273be5402c565fc0d580/Notes%20by%20topic/Graphs.md)
-- [Hash Table](https://github.com/donamj/Interview-Prep/blob/4d1f8b75605817ba01c6273be5402c565fc0d580/Notes%20by%20topic/Hash%20Tables.md)
-- [Heaps](https://github.com/donamj/Interview-Prep/blob/4d1f8b75605817ba01c6273be5402c565fc0d580/Notes%20by%20topic/Heaps.md)
+- [Concurrency](https://github.com/donamj/Interview-Prep/blob/main/By%20Topics/Concurrency/Concurrency.md)
+- [Graphs](https://github.com/donamj/Interview-Prep/blob/main/By%20Topics/Graphs/Graph.md)
+- [HashMaps](https://github.com/donamj/Interview-Prep/blob/main/By%20Topics/HashMaps/HashMaps.md)
+- [Heaps](https://github.com/donamj/Interview-Prep/blob/main/By%20Topics/Heaps/Heaps.md)
 - [OOP](https://github.com/donamj/Interview-Prep/blob/4d1f8b75605817ba01c6273be5402c565fc0d580/Notes%20by%20topic/OOP.md)
-- [Sorting](https://github.com/donamj/Interview-Prep/blob/4d1f8b75605817ba01c6273be5402c565fc0d580/Notes%20by%20topic/Sorting.md)
-- [Trees](https://github.com/donamj/Interview-Prep/blob/4d1f8b75605817ba01c6273be5402c565fc0d580/Notes%20by%20topic/Trees.md)
+- [Sorting](https://github.com/donamj/Interview-Prep/blob/main/By%20Topics/Arrays/Sorting.md)
+- [Trees](https://github.com/donamj/Interview-Prep/blob/main/By%20Topics/Trees/Trees.md)
 - [Tips and Tricks](https://github.com/donamj/Interview-Prep/blob/4d1f8b75605817ba01c6273be5402c565fc0d580/Notes%20by%20topic/Tips%20and%20Tricks.md)
 - [Points to note](https://github.com/donamj/Interview-Prep/blob/4d1f8b75605817ba01c6273be5402c565fc0d580/Notes%20by%20topic/Points%20To%20Note.md)
 
-<br />
-
 # Snippets by Pattern
+- [Recursion](https://github.com/donamj/Interview-Prep/blob/main/Snippets%20-%20By%20Pattern/Recursion.md)
 - [Sliding Window](https://github.com/donamj/Interview-Prep/blob/main/Snippets%20-%20By%20Pattern/Sliding%20Window.md)
 - [Two Pointers](https://github.com/donamj/Interview-Prep/blob/main/Snippets%20-%20By%20Pattern/Two%20Pointers.md)
 
-<br/>
-
 # Snippets By Topic
-- [Arrays](https://github.com/donamj/Interview-Prep/blob/main/Snippets%20-%20By%20Topic/Arrays.md)
-- [Graph](https://github.com/donamj/Interview-Prep/blob/main/Snippets%20-%20By%20Topic/Graph.md)
-- [Linked List](https://github.com/donamj/Interview-Prep/blob/main/Snippets%20-%20By%20Topic/Linked%20List.md)
-- [Recursion](https://github.com/donamj/Interview-Prep/blob/main/Snippets%20-%20By%20Topic/Recursion.md)
--[Stacks and Queues]()
--[Strings](https://github.com/donamj/Interview-Prep/blob/main/Snippets%20-%20By%20Topic/Strings.md)
--[Tree](https://github.com/donamj/Interview-Prep/blob/main/Snippets%20-%20By%20Topic/Tree.md)
-
-<br/>
+- [Arrays](https://github.com/donamj/Interview-Prep/blob/main/By%20Topics/Arrays/Snippets%20-%20Arrays.md)
+- [Graph](https://github.com/donamj/Interview-Prep/blob/main/By%20Topics/Graphs/Snippets%20-%20Graphs.md)
+- [Linked List](https://github.com/donamj/Interview-Prep/blob/main/By%20Topics/LinkedLists/Snippets%20-%20LinkedList.md)
+- [Stacks and Queues](https://github.com/donamj/Interview-Prep/blob/main/By%20Topics/Stacks%20and%20Queues/Stacks%20and%20Queues.md)
+- [Strings](https://github.com/donamj/Interview-Prep/blob/main/By%20Topics/Strings/Snippets%20-%20Strings.md)
+- [Tree](https://github.com/donamj/Interview-Prep/blob/main/By%20Topics/Trees/Snippets%20-%20Tree.md)
 
 # Coding Questions
-
 ## Arrays
 - [Combination Sum
-](https://github.com/donamj/Interview-Prep/blob/main/Coding%20Questions/Array/CombinationSum.java)
+](https://github.com/donamj/Interview-Prep/blob/main/By%20Topics/Arrays/Coding%20Questions/CombinationSum.java)
 
 ## Trees
-- [Trie](https://github.com/donamj/Interview-Prep/blob/main/Coding%20Questions/Tree/Trie.java)
+- [Trie](https://github.com/donamj/Interview-Prep/blob/main/By%20Topics/Trees/Coding%20Questions/Trie.java)
+- [Identical Trees](https://github.com/donamj/Interview-Prep/blob/main/By%20Topics/Trees/Coding%20Questions/IdenticalTree.java)
 
+## Graphs
+- [Detect cycle in directed graph](https://github.com/donamj/Interview-Prep/blob/main/By%20Topics/Graphs/Coding%20Questions/DetectCycleInDirectedGraph.java)
+- [Detect cycle in undirected graph](https://github.com/donamj/Interview-Prep/blob/main/By%20Topics/Graphs/Coding%20Questions/DetectCycleInUndirectedGraph.java)
 ## Concurrency
-- [WebCrawlerMultiThreaded](https://github.com/donamj/Interview-Prep/blob/main/Coding%20Questions/Concurrency/WebCrawlerMultiThreaded.java)
-- [WebCrawlerSingleThreaded](https://github.com/donamj/Interview-Prep/blob/main/Coding%20Questions/Concurrency/WebCrawlerSingleThreaded.java)
+- [Web crawler - multi threaded](https://github.com/donamj/Interview-Prep/blob/main/By%20Topics/Concurrency/Coding%20Questions/WebCrawlerMultiThreaded.java)
+- [Web crawler - single threaded](https://github.com/donamj/Interview-Prep/blob/main/By%20Topics/Concurrency/Coding%20Questions/WebCrawlerSingleThreaded.java)
