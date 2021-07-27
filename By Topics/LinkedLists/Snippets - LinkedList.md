@@ -1,5 +1,5 @@
 ## Table of Contents
-[Copy linked list with arbitrary pointer](#copy-linked-list-with-arbitrary-pointer)
+- [Copy linked list with arbitrary pointer](#copy-linked-list-with-arbitrary-pointer)
 - [Remove duplicate elements](#remove-duplicate-elements)
 - [Return the kth last element](#return-the-kth-last-element)
 - [Delete middle node](#delete-middle-node)
@@ -13,6 +13,7 @@
 - Add every node as the next node of existing node.
 - In second iteration, establish the random pointer relationship
 - Separate both the lists
+
     ```
     public Node copyRandomList(Node head) {
             

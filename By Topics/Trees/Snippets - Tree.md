@@ -164,44 +164,64 @@
 
 ## Check if tree is complete
 ```
-    public boolean isCompleteTree(TreeNode root) {
-        
-        if(root == null)
-            return true;
-        
-        Queue<TreeNode> q = new LinkedList<>();
-        boolean isComplete = false;
-        
-        q.add(root);
-        
-        while(!q.isEmpty())
-        {
-            TreeNode node = q.poll();
-            
-            if(node.left != null)
-            {
-                if(isComplete)
-                    return false;
-                
-                q.add(node.left);
-            }
-            else
-                isComplete = true;
-            
-            if(node.right != null)
-            {
-                if(isComplete)
-                    return false;
-                
-                q.add(node.right);
-            }
-            else
-                isComplete = true;
+    public static boolean isComplete(Node root)
+    {
+        // return if the tree is empty
+        if (root == null) {
+            return false;
         }
-        
+ 
+        // create an empty queue and enqueue the root node
+        Queue<Node> queue = new ArrayDeque<>();
+        queue.add(root);
+ 
+        // to store the current node
+        Node front;
+ 
+        // flag to mark the end of full nodes
+        boolean flag = false;
+ 
+        // loop till queue is empty
+        while (!queue.isEmpty())
+        {
+            // dequeue front node
+            front = queue.poll();
+ 
+            // if we have encountered a non-full node before and the current node is not a leaf, a tree  cannot be complete
+            if (flag && (front.left != null || front.right != null)) {
+                return false;
+            }
+ 
+            // if the left child is empty and the right child exists, a tree cannot be complete
+            if (front.left == null && front.right != null) {
+                return false;
+            }
+ 
+            // if the left child exists, enqueue it
+            if (front.left != null) {
+                queue.add(front.left);
+            }
+            // if the current node is a non-full node, set the flag to true
+            else {
+                flag = true;
+            }
+ 
+            // if the right child exists, enqueue it
+            if (front.right != null) {
+                queue.add(front.right);
+            }
+            // if the current node is a non-full node, set the flag to true
+            else {
+                flag = true;
+            }
+        }
+ 
         return true;
     }
+ 
 ```
+**Time complexity:** O(N) since we visit each node exactly once. <br>
+**Space complexity:** O(N)
 
 ## Check if a BST is valid
 ```

@@ -1,3 +1,4 @@
+
 ## Table of Contents
 - [Comparison b/w QuickSort and MergeSort](#comparison-b-w-quicksort-and-mergesort)
 - [Time Complexities](#time-complexities)
@@ -18,13 +19,13 @@
 ## Time Complexities
 1. O(1): Time complexity of a function (or set of statements) is considered as O(1) if it doesn’t contain loop, recursion and call to any other non-constant time function.
 
-2. O(n): Time Complexity of a loop is considered as O(n) if the loop variables is incremented / decremented by a constant amount. For example following functions have O(n) time complexity.
+2. O(n): Time Complexity of a loop is considered as O(n) if the loop variables is incremented / decremented by a constant amount.
 
-3. O(nc): Time complexity of nested loops is equal to the number of times the innermost statement is executed. For example the following sample loops have O(n2) time complexity
+3. O(nc): Time complexity of nested loops is equal to the number of times the innermost statement is executed. 
 
-4. O(Logn) Time Complexity of a loop is considered as O(Logn) if the loop variables is divided / multiplied by a constant amount.
+4. O(Log n) Time Complexity of a loop is considered as O(Log n) if the loop variables is divided / multiplied by a constant amount.
 
-5. O(LogLogn) Time Complexity of a loop is considered as O(LogLogn) if the loop variables is reduced / increased exponentially by a constant amount.
+5. O(Log Log n) Time Complexity of a loop is considered as O(Log Log n) if the loop variables is reduced / increased exponentially by a constant amount.
 
 ## What is serialization?
 Serialization is the process of making the object's state persistent. That means the state of the object is converted into a stream of bytes and stored in a file. In the same way, we can use the deserialization to bring back the object's state from bytes. This is one of the important concepts in Java programming because serialization is mostly used in networking programming. The objects that need to be transmitted through the network have to be converted into bytes. For that purpose, every class or interface must implement the Serializable interface. It is a marker interface without any methods.
@@ -80,7 +81,7 @@ Most of the concepts in computer science and real world can be visualized and re
 
 
 ## Topological Sort
-All pairs of consecutive vertices in the sorted order are connected by edges; then these edges form a directed Hamiltonian path [refer to Problems Section] in the DAG. If a Hamiltonian path exists, the topological sort order is unique. If a topological sort does not form a Hamiltonian path, DAG can have two or more topological orderings.
+All pairs of consecutive vertices in the sorted order are connected by edges; then these edges form a directed Hamiltonian path in the DAG. If a Hamiltonian path exists, the topological sort order is unique. If a topological sort does not form a Hamiltonian path, DAG can have two or more topological orderings.
 
 
 

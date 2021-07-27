@@ -6,10 +6,10 @@
 - [Longest Arithmetics Sequence](#longest-arithmetics-sequence)
 - [Max product of sub array](#max-product-of-sub-array)
 - [Largest number possible from an array](#largest-number-possible-from-an-array)
-- [Minimum sum sub array](#minimum-sum-sub-array)
+- [Minimum sum sub array of size k](#minimum-sum-sub-array-of-size-k)
 - [Maximum profit earned by buying or selling shares](#maximum-profit-earned-by-buying-or-selling-shares)
 - [Power set of a set](#power-set-of-a-set)
-- [Max sum sub array](#max-sum-sub-array)
+- [Max sum sub array of](#max-sum-sub-array)
 - [Sub array whose sum is k](#sub-array-whose-sum-is-k)
 - [Longest consecutive sequence](#longest-consecutive-sequence)
 - [Number of possible triangles](#number-of-possible-triangles)
@@ -164,8 +164,9 @@ publicstatic String largestNumberFromArray(ArrayList<String> arr)
 
 <br>
 
-## Minimum sum sub array
-Find minimum sum sub array of size k - O(n) - uses sliding window
+## Minimum sum sub array of size k
+- O(n) time complexity
+- Uses sliding window
 ```
 void findSubarray(int arr[], int n, int k)
 {
@@ -201,21 +202,24 @@ Find the increasing sub sequences, Buy on the start of the sequence and sell at 
 
 ```
 // Function to find maximum profit that can be earned by buying and selling shares any number of times    
-public static int maxProfit(int[ ] price)
+public static int maxProfit(int[] price)
 {
-	// store maximum profit gained
+	// Store maximum profit gained
 	int profit = 0;
-	// initialize local minimum to first element's index
+
+	// Initialize local minimum to first element's index
 	int j = 0;
-	// start from second element
+
+	// Start from second element
 	for (int i = 1; i < price.length; i++)
-		{
-		// update local minimum if decreasing sequence is found
+	{
+		// Update local minimum if decreasing sequence is found
 		if (price[i - 1] > price[i]) 
 		{
 			j = i;
 		}
-		// sell shares if current element is peak i.e. (previous < current > next)
+
+		// Sell shares if current element is peak i.e. (previous < current > next)
 		if (price[i - 1] < price[i] && (i + 1 == price.length || price[i] > price[i + 1]))
 		{
 			profit += (price[i] - price[j]);
@@ -305,7 +309,7 @@ static void powerSet(String str, int index, String curr)
 ## Max sum sub array
 https://medium.com/@codingfreak/huge-collection-of-array-interview-questions-e87ac7c34e62
 
-Find the max sum subarray - O(n)
+Time complexity - O(n)
 ```
 public int maxSubArray(int[] nums) {
         
@@ -322,7 +326,7 @@ public int maxSubArray(int[] nums) {
     }
 ```
 
-Find the maximum length of a subarray that sums to k <br>
+## Find the maximum length of a subarray that sums to k <br>
 Time Complexity: O(n) <br>
 Auxiliary Space: O(n)
 

@@ -22,7 +22,7 @@ import java.util.*;
 public class CombinationSum {
     public List<List<Integer>> combinationSum (int[] candidates, int target)
     {
-    Arrays.sort(candidates);
+        Arrays.sort(candidates);
 
         List<List<Integer>> results = new ArrayList<>();
         combinationSumHelper(results, new ArrayList<>(), candidates, target, 0);

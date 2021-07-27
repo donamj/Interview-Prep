@@ -10,7 +10,7 @@
         int[] rowOffset = {-1, 0, 1, 0}; <br>
         int[] colOffset = {0, 1, 0, -1};
 
-- **Permutations and combinations:** <br>Whenever you have a problem where you need to generate all combinations/permutations of some group of letters/numbers, the first thought you should have is backtracking. If you're new to backtracking, check out our backtracking explore card. Backtracking algorithms can often keep the space complexity linear with the input size.
+- **Permutations and combinations:** <br>Whenever you have a problem where you need to generate all combinations/permutations of some group of letters/numbers, the first thought you should have is backtracking. Backtracking algorithms can often keep the space complexity linear with the input size.
 
 - **Interpolation search formula:**  Mid = (data – low) / (high – low)
 

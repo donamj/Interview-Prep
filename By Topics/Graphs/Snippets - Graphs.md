@@ -19,7 +19,7 @@
 
 3. Topological Sorting is mainly used for scheduling jobs from the given dependencies among jobs. Uses DFS.
 
-4. Shortest Path and Minimum Spanning Tree for unweighted graph In an unweighted graph, the shortest path is the path with least number of edges. With Breadth First, we always reach a vertex from given source using the minimum number of edges.
+4. Shortest Path and Minimum Spanning Tree for unweighted graph - In an unweighted graph, the shortest path is the path with least number of edges. With Breadth First, we always reach a vertex from given source using the minimum number of edges.
 
 <br>
 
@@ -139,7 +139,7 @@ Reference : https://www.baeldung.com/java-dijkstra
 
 <br>
 
-**Node Structure**
+**Structure**
 ```
 private String name;
     
@@ -153,10 +153,38 @@ Here's a list of steps to follow in order to solve the SPP with Dijkstra: <br>
 - Set distance to startNode to zero.
 - Set all other distances to an infinite value.
 - We add the startNode to the unsettled nodes set.
+- Add neighbors that are not yet settled to the unsettled nodes set.
+    ```
+    public static Graph calculateShortestPathFromSource(Graph graph, Node source) 
+    {
+        source.setDistance(0);
+
+        Set<Node> settledNodes = new HashSet<>();
+        Set<Node> unsettledNodes = new HashSet<>();
+
+        unsettledNodes.add(source);
+
+        while (unsettledNodes.size() != 0) {
+            Node currentNode = getLowestDistanceNode(unsettledNodes);
+            unsettledNodes.remove(currentNode);
+            for (Entry < Node, Integer> adjacencyPair: 
+            currentNode.getAdjacentNodes().entrySet()) {
+                Node adjacentNode = adjacencyPair.getKey();
+                Integer edgeWeight = adjacencyPair.getValue();
+                if (!settledNodes.contains(adjacentNode)) {
+                    calculateMinimumDistance(adjacentNode, edgeWeight, currentNode);
+                    unsettledNodes.add(adjacentNode);
+                }
+            }
+            settledNodes.add(currentNode);
+        }
+        return graph;
+    }
+    ```
 - While the unsettled nodes set is not empty we:
     - Choose an evaluation node from the unsettled nodes set, the evaluation node should be the one with the lowest distance from the source.
         ```
-        private static Node getLowestDistanceNode(Set < Node > unsettledNodes) 
+        private static Node getLowestDistanceNode(Set<Node> unsettledNodes) 
         {
             Node lowestDistanceNode = null;
             int lowestDistance = Integer.MAX_VALUE;
@@ -172,43 +200,15 @@ Here's a list of steps to follow in order to solve the SPP with Dijkstra: <br>
         ```
     - Calculate new distances to direct neighbors by keeping the lowest distance at each evaluation.
         ```
-        private static void CalculateMinimumDistance(Node evaluationNode, Integer edgeWeigh, Node sourceNode)
+        private static void CalculateMinimumDistance(Node evaluationNode, Integer edgeWeight, Node sourceNode)
         {
             Integer sourceDistance = sourceNode.getDistance();
-            if (sourceDistance + edgeWeigh < evaluationNode.getDistance()) {
-                evaluationNode.setDistance(sourceDistance + edgeWeigh);
+            if (sourceDistance + edgeWeight < evaluationNode.getDistance()) {
+                evaluationNode.setDistance(sourceDistance + edgeWeight);
                 LinkedList<Node> shortestPath = new LinkedList<>(sourceNode.getShortestPath());
                 shortestPath.add(sourceNode);
                 evaluationNode.setShortestPath(shortestPath);
             }
-        }
-        ```
-    - Add neighbors that are not yet settled to the unsettled nodes set.
-        ```
-        public static Graph calculateShortestPathFromSource(Graph graph, Node source) 
-        {
-            source.setDistance(0);
-
-            Set<Node> settledNodes = new HashSet<>();
-            Set<Node> unsettledNodes = new HashSet<>();
-
-            unsettledNodes.add(source);
-
-            while (unsettledNodes.size() != 0) {
-                Node currentNode = getLowestDistanceNode(unsettledNodes);
-                unsettledNodes.remove(currentNode);
-                for (Entry < Node, Integer> adjacencyPair: 
-                currentNode.getAdjacentNodes().entrySet()) {
-                    Node adjacentNode = adjacencyPair.getKey();
-                    Integer edgeWeight = adjacencyPair.getValue();
-                    if (!settledNodes.contains(adjacentNode)) {
-                        calculateMinimumDistance(adjacentNode, edgeWeight, currentNode);
-                        unsettledNodes.add(adjacentNode);
-                    }
-                }
-                settledNodes.add(currentNode);
-            }
-            return graph;
         }
         ```
 <br>
@@ -247,10 +247,12 @@ void BellmanFord(Graph graph,int src)
 {
     int V = graph.V, E = graph.E;
     int dist[] = new int[V];
+    
     // Step 1: Initialize distances from src to all other vertices as INFINITE
     for (int i=0; i<V; ++i)
         dist[i] = Integer.MAX_VALUE;
     dist[src] = 0;
+    
     // Step 2: Relax all edges |V| - 1 times. A simple shortest path from src to any other vertex can have at-most |V| - 1 edges
     for (int i=1; i<V; ++i)
     {
@@ -263,15 +265,14 @@ void BellmanFord(Graph graph,int src)
                 dist[v]=dist[u]+weight;
         }
     }
-    // Step 3: check for negative-weight cycles.  The above step guarantees shortest distances if graph doesn't
-    // contain negative weight cycle. If we get a shorter path, then there is a cycle.
+    
+    // Step 3: check for negative-weight cycles. The above step guarantees shortest distances if graph doesn't contain negative weight cycle. If we get a shorter path, then there is a cycle.
     for (int j=0; j<E; ++j)
     {
         int u = graph.edge[j].src;
         int v = graph.edge[j].dest;
         int weight = graph.edge[j].weight;
-        if (dist[u] != Integer.MAX_VALUE &&
-            dist[u]+weight < dist[v])
+        if (dist[u] != Integer.MAX_VALUE && dist[u]+weight < dist[v])
           System.out.println("Graph contains negative weight cycle");
     }
     printArr(dist, V);

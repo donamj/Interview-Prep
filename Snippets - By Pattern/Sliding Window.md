@@ -171,7 +171,8 @@ public static int findLength(String str, int k) {
 }
 ```
 
-## 7. Permutations in a string
+## 7. Given a string and a pattern, find out if the string contains any permutation of the pattern.
+
 ```
 public static boolean findPermutation(String str, String pattern) {
     int start = 0, matched = 0;
@@ -211,7 +212,7 @@ Time complexity : O(M + N), where M and N are the length of string and pattern.
 <br />
 Space complexity : O(M), since, in the worst case, the whole pattern can have distinct characters that will go into the HashMap.
 
-## 8. String anagrams
+## 8. Given a string and a pattern, find all anagrams of the pattern in the given string
 ```
 public static List<Integer> findStringAnagrams(String str, String pattern) {
     int start = 0, matched = 0;
