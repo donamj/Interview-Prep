@@ -21,3 +21,6 @@ The main advantage of the Greedy method is that it is straightforward, easy to u
 - Min and Max Finding
 - Matrix Multiplication
 - Closest Pair problem 
+
+## Useful resources
+* [Algorithm visualization](https://www.cs.usfca.edu/~galles/visualization/Algorithms.html)

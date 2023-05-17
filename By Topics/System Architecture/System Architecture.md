@@ -1,0 +1,19 @@
+## System Architecture
+- [Software Architecture](https://jenkov.com/tutorials/software-architecture/index.html)
+- [Operating System](https://www.tutorialspoint.com/operating_system/)
+- Some basics
+    - [How CPU executes a program (video)](https://www.youtube.com/watch?v=XM4lGflQFvA)
+    - [How computers calculate - ALU (video)](https://youtu.be/1I5ZMmrOfnA)
+    - [Registers and RAM (video)](https://youtu.be/fpnE6UAfbtU)
+    - [The Central Processing Unit (CPU) (video)](https://youtu.be/FZGugFqdr60)
+    - I[nstructions and Programs (video)](https://youtu.be/zltgXvg6r3k)
+- [How Operating Systems Work: 10 Concepts you Should Know as a Developer](https://data-notes.co/how-operating-systems-work-10-concepts-you-should-know-as-a-developer-8d63bb38331f)
+- [Multithreading and Concurrency Fundamentals](https://www.educative.io/blog/multithreading-and-concurrency-fundamentals)
+- [Process in OS](https://www.studytonight.com/operating-system/operating-system-processes)
+- [Mutex vs Semaphore - Difference Between Them](https://www.guru99.com/mutex-vs-semaphore.html)
+- [Mutex vs Semaphore](https://www.geeksforgeeks.org/mutex-vs-semaphore/)
+- Resource allocation
+- Process
+- Threads
+- Concurrency, semaphores, mutex
+- Context switching

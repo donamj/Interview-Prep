@@ -1,4 +1,9 @@
 # Four Week Plan
+
+[Technical interview checklist](https://f.hubspotusercontent10.net/hubfs/14532763/Technical%20Interview%20Prep%20Checklist.pdf?utm_medium=email&_hsmi=170040107&_hsenc=p2ANqtz--_yJDLv8az-UZTv7s_goKt4zZHFxIqae8KH9UstoRrPmrPFMSe5pnpMkMa0KKDIRDtalCryTbH9VC3l4pU77YWNLPzxQ&utm_content=170040107&utm_source=hs_email)
+
+[The One Year Plan For Cracking Coding Interviews](https://towardsdatascience.com/the-one-year-plan-for-competitive-coding-6af53f2f719c)
+
 ### **Week 1** 
 Concentrate on brushing up basics in the first week.
 
@@ -9,7 +14,7 @@ Concentrate on brushing up basics in the first week.
    - Implement strstr
 3. Stack
 4. Queue
-5. Linked List - Singley Linked, Doubly Linked, Circular
+5. Linked List - Singly Linked, Doubly Linked, Circular
 6. Trees
    - Binary Tree
    - Binary Search Tree
@@ -49,9 +54,9 @@ Concentrate on brushing up basics in the first week.
       * [Prim's](https://www.baeldung.com/java-prim-algorithm)
    - [Traversal](https://www.section.io/engineering-education/graph-traversals-java/)
       * BFS and DFS
-      * Know their computational complexity, their trade offs and how to impletment them
-4. Algorithms
-   -  A start algorithm
+      * Know their computational complexity, their trade-offs and how to implement them
+4. [Algorithms](https://www.coursera.org/specializations/algorithms#courses)
+   - A start algorithm
    - Travelling sales man
    - [Knapsack problem](https://medium.com/@fabianterh/how-to-solve-the-knapsack-problem-with-dynamic-programming-eb88c706d3cf)
    - NP complete - Refer Chapter 20 of [DS and Algo by Karumanchi](https://www.amazon.com/Data-Structures-Algorithms-Made-Easy/dp/819324527X)
@@ -59,6 +64,7 @@ Concentrate on brushing up basics in the first week.
    - Rabin Karp - used for strstr
    - Greedy Algorithm
    - Divide and Conquer
+
 ### **Week 3** 
 1. Recursion
 2. Hash Tables
@@ -66,17 +72,18 @@ Concentrate on brushing up basics in the first week.
    - Difference between hash table and hash maps
    - Implement hash tables and hash maps using arrays
 3. Priority Queues and Heaps
-4. [Dynamic Programming](https://www.educative.io/courses/grokking-dynamic-programming-patterns-for-coding-interviews/m2G1pAq0OO0)
+4. [Dynamic Programming](https://www.educative.io/courses/grokking-dynamic-programming-a-deep-dive-using-java)
 5. [Backtracking](https://cs.lmu.edu/~ray/notes/backtracking/) - N Queens
+
 ### **Week 4** 
-1. [System Design](https://www.hiredintech.com/classrooms/system-design/lesson/52)
+1. [System Design](https://www.educative.io/courses/grokking-modern-system-design-interview-for-engineers-managers)
 2. Operating System
    - [Mutex vs Semaphores](https://www.guru99.com/mutex-vs-semaphore.html) ([Source 2](https://www.geeksforgeeks.org/mutex-vs-semaphore/))
    - Concurrency, semaphores, mutex
    - [Process](https://www.studytonight.com/operating-system/operating-system-processes)
    - Resource Allocation
    - Context Switching
-   - Prcess, Thread
+   - Process, Thread
    - [Multi-threading and concurrency](https://www.educative.io/blog/multithreading-and-concurrency-fundamentals)
 3. Probability
 4. Design Patterns
@@ -85,10 +92,10 @@ Concentrate on brushing up basics in the first week.
 # Something to Refer Daily
 1. [Data Structure Reference](https://www.interviewcake.com/data-structures-reference)
 2. [The Technical Interview Cheat Sheet](https://gist.github.com/TSiege/cbb0507082bb18ff7e4b)
-3. [Algorithm and DS Cheetsheet](https://algs4.cs.princeton.edu/cheatsheet/)
+3. [Algorithm and DS Cheatsheet](https://algs4.cs.princeton.edu/cheatsheet/)
 4. [Technical Interview Preparation](https://hackmd.io/@nesquena/SJIV-n7B?type=view)
 5. [Tech-Interview-Cheat-Sheet](https://github.com/TSiege/Tech-Interview-Cheat-Sheet)
-6. [Coding inteview university](https://github.com/jwasham/coding-interview-university#data-structures)
+6. [Coding interview university](https://github.com/jwasham/coding-interview-university#data-structures)
 7. [Algo daily](https://algodaily.com/lessons/an-executable-data-structures-cheat-sheet)    
 
 

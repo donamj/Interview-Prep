@@ -135,6 +135,11 @@ Following are the steps involved in quick sort algorithm:
 
     ![https://github.com/donamj/Interview-Prep/blob/4d1f8b75605817ba01c6273be5402c565fc0d580/Assets/QuickSort.png](https://github.com/donamj/Interview-Prep/blob/4d1f8b75605817ba01c6273be5402c565fc0d580/Assets/QuickSort.png)
 
+### Comparison b/w QuickSort and MergeSort
+- Although both Quicksort and Mergesort have an average time complexity of O(n log n), Quicksort is the preferred algorithm, as it has an O(log(n)) space complexity. Mergesort, on the other hand, requires O(n) extra storage, which makes it quite expensive for arrays. <br>
+
+- Quicksort requires to access different indices for its operations, but this access is not directly possible in linked lists, as there are no continuous blocks; therefore to access an element we have to iterate through each node from the beginning of the linked list. Also, Mergesort is implemented without extra space for LinkedLists.
+
 
 **With middle element as pivot**
 ```
@@ -187,18 +192,21 @@ public static void quickSort(Integer[] arr, intlow, inthigh)
 **With first element as pivot**
 ```
 void quickSort(int arr[], int low, int high) {
-if(low < high) {
-in tpart = part(arr,low,high);
-quickSort(arr, low , part-1);
-quickSort(arr, part+1, high);
+   if(low < high) {
+      in tpart = partition(arr,low,high);
+      quickSort(arr, low , part-1);
+      quickSort(arr, part+1, high);
+   }
 }
-}
-    static int partition ( int A[ ],int start ,int end) {
+
+static int partition(int A[], int start, int end) {
     int i = start + 1;
     int piv = A[start] ; //make the first element as pivot element. 
     for(int j=start + 1; j <= end ; j++ )  {
-    /*rearrange the array by putting elements which are less than pivot
-      on one side and which are greater that on other. */
+    /* 
+      rearrange the array by putting elements which are less than pivot
+      on one side and which are greater that on other.
+    */
           if ( A[j] < piv) {
                 int temp = A[i];
                 A[i] = A[j];
@@ -207,9 +215,9 @@ quickSort(arr, part+1, high);
           }
   }
   int temp = A[start];
-          A[start] = A[i-1];
-          A[i-1] = temp;
-          i += 1;//put the pivot element in its proper place.
+  A[start] = A[i-1];
+  A[i-1] = temp;
+  i += 1;//put the pivot element in its proper place.
   return i-1;                      //return the position of the pivot
 }
 ```

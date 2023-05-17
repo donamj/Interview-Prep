@@ -12,3 +12,16 @@
 
 ## AVL Tree
 The balance factor of node N is height(right(N)) – height(left(N)). In an AVL Tree, the balance factor of a node could be only one of 1, 0, or -1 values.
+
+https://www.baeldung.com/java-avl-trees
+
+## Binary Tree
+
+## Binary Search Tree
+
+## Red Black Tree
+
+## Trie
+A trie is a tree-like data structure, with nodes that store the letters of an alphabet. Words and strings can be reTRIEved from the structure by traveling down a branch path of the tree.
+
+https://leetcode.com/explore/learn/card/trie/

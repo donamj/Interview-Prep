@@ -24,6 +24,6 @@ Time complexities of various min heap operations:
 <br />
 
 ### Reference 
-https://www.journaldev.com/36805/min-heap-binary-tree
-https://www.codespeedy.com/building-heap-from-an-array-in-java/
-https://www.techiedelight.com/convert-min-heap-to-max-heap-linear-time/
+- https://www.journaldev.com/36805/min-heap-binary-tree
+- https://www.codespeedy.com/building-heap-from-an-array-in-java/
+- https://www.techiedelight.com/convert-min-heap-to-max-heap-linear-time/

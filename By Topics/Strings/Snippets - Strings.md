@@ -5,22 +5,24 @@
 - [Sort an array of strings according to alphabetical order defined by another string](#sort-an-array-of-strings-according-to-alphabetical-order-defined-by-another-string)
 - [Find all anagrams](#find-all-anagrams)
 
+
+Easy String Interview: https://algodaily.com/lessons/an-executable-data-structures-cheat-sheet 
 <br>
 
 ## All Permutations of a string
 ```
 private static void permutation(String prefix, String str) 
 {
-      int n = str.length();
-      if (n == 0) 
+    int n = str.length();
+    if (n == 0) 
 	{
 		System.out.println(prefix);
 	}
 	else
 	{
-      for (int i = 0; i < n; i++)
+        for (int i = 0; i < n; i++)
             permutation(prefix + str.charAt(i), str.substring(0, i) + str.substring(i+1, n));
-}
+    }
 }
 ```
 
@@ -81,17 +83,13 @@ private static void sort(String[] strArr, String str)
         @Override
         public int compare(String a, String b)
         {
-            for(int i = 0;
-                    i < Math.min(a.length(),
-                                 b.length()); i++)
+            for(int i = 0; i < Math.min(a.length(), b.length()); i++)
             {
-                if (str.indexOf(a.charAt(i)) ==
-                    str.indexOf(b.charAt(i)))
+                if (str.indexOf(a.charAt(i)) == str.indexOf(b.charAt(i)))
                 {
                     continue;
                 }
-                else if(str.indexOf(a.charAt(i)) >
-                        str.indexOf(b.charAt(i)))
+                else if(str.indexOf(a.charAt(i)) > str.indexOf(b.charAt(i)))
                 {
                     return 1;
                 }
