@@ -2,6 +2,7 @@
 ## Table of Contents
 - [Time Complexities](#time-complexities)
 - [What is serialization?](#what-is-serialization-)
+- [Tips and Tricks](#tips-and-tricks)
 
 <br>
 
