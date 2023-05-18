@@ -1,3 +1,9 @@
+# Tree
+* https://www.techinterviewhandbook.org/algorithms/tree/
+* https://www.educative.io/blog/data-structures-trees-java
+
+
+## Points to Note
 1. Perfect binary trees should have 2^k-1 nodes, where k is the number of levels 
 
 2. When performed on a binary search tree, it visits the nodes in ascending order (hence the name "in-order").
@@ -22,6 +28,7 @@ https://www.baeldung.com/java-avl-trees
 ## Red Black Tree
 
 ## Trie
-A trie is a tree-like data structure, with nodes that store the letters of an alphabet. Words and strings can be reTRIEved from the structure by traveling down a branch path of the tree.
+A trie is a tree-like data structure, with nodes that store the letters of an alphabet. Words and strings can be reTRIEved from the structure by traveling down a branch path of the tree.
 
-https://leetcode.com/explore/learn/card/trie/
+- https://leetcode.com/explore/learn/card/trie/
+- https://www.techinterviewhandbook.org/algorithms/trie/

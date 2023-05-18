@@ -6,9 +6,6 @@
 - [Find all anagrams](#find-all-anagrams)
 
 
-Easy String Interview: https://algodaily.com/lessons/an-executable-data-structures-cheat-sheet 
-<br>
-
 ## All Permutations of a string
 ```
 private static void permutation(String prefix, String str) 

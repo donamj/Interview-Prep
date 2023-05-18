@@ -1,4 +1,7 @@
-# How to prepare?
+# Interview Prep Helper
+Refresh your memory first. [This](https://howtodoinjava.com/java-interview-questions/) might help.
+
+## How to prepare?
 - [Behavioural](https://github.com/donamj/Interview-Prep/blob/main/How%20to%20prepare!/Behavioural.md)
 - [CheatSheets](https://github.com/donamj/Interview-Prep/blob/main/How%20to%20prepare!/CheatSheets.md)
 - [Questions to interviewer](https://github.com/donamj/Interview-Prep/blob/main/How%20to%20prepare!/Questions%20to%20Interviewer.md)
@@ -6,7 +9,7 @@
 - [Tracking Progress](https://github.com/donamj/Interview-Prep/blob/main/How%20to%20prepare!/Tracking%20Progress.md)
 - [Useful Links](https://github.com/donamj/Interview-Prep/blob/main/How%20to%20prepare!/Useful%20Links.md)
 
-# Notes by topic
+## Notes by topic
 - [Algorithms](https://github.com/donamj/Interview-Prep/blob/main/By%20Topics/Algorithms/Algorithms.md)
 - [Bit Manipulation](https://github.com/donamj/Interview-Prep/blob/main/By%20Topics/Bit%20Manipulation)
 - [Concurrency](https://github.com/donamj/Interview-Prep/blob/main/By%20Topics/Concurrency/Concurrency.md)
@@ -22,12 +25,12 @@
 - [Trees](https://github.com/donamj/Interview-Prep/blob/main/By%20Topics/Trees.md)
 - [Points to note](https://github.com/donamj/Interview-Prep/blob/main/Notes%20by%20topic/Points%20To%20Note.md)
 
-# Snippets by Pattern
+## Snippets by Pattern
 - [Recursion](https://github.com/donamj/Interview-Prep/blob/main/Snippets%20-%20By%20Pattern/Recursion.md)
 - [Sliding Window](https://github.com/donamj/Interview-Prep/blob/main/Snippets%20-%20By%20Pattern/Sliding%20Window.md)
 - [Two Pointers](https://github.com/donamj/Interview-Prep/blob/main/Snippets%20-%20By%20Pattern/Two%20Pointers.md)
 
-# Snippets By Topic
+## Snippets By Topic
 - [Arrays](https://github.com/donamj/Interview-Prep/blob/main/By%20Topics/Arrays/Snippets%20-%20Arrays.md)
 - [Graph](https://github.com/donamj/Interview-Prep/blob/main/By%20Topics/Graphs/Snippets%20-%20Graphs.md)
 - [Linked List](https://github.com/donamj/Interview-Prep/blob/main/By%20Topics/LinkedLists/Snippets%20-%20LinkedList.md)
@@ -35,7 +38,7 @@
 - [Strings](https://github.com/donamj/Interview-Prep/blob/main/By%20Topics/Strings/Snippets%20-%20Strings.md)
 - [Tree](https://github.com/donamj/Interview-Prep/blob/main/By%20Topics/Trees/Snippets%20-%20Tree.md)
 
-# Coding Questions
+## Coding Questions
 ### Arrays
 - [Combination Sum](https://github.com/donamj/Interview-Prep/blob/main/By%20Topics/Arrays/Coding%20Questions/CombinationSum.java)
 

@@ -1,4 +1,7 @@
-# Java Thread Basics
+# Concurrency
+* https://www.educative.io/blog/multithreading-and-concurrency-fundamentals
+* https://www.educative.io/blog/java-multithreading-and-concurrency-what-to-know-for
+
 
 ## Setting up Threads
 There are two ways to set up threads

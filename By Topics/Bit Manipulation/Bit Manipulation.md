@@ -1,3 +1,5 @@
+# Bit Manipulation
+
 1. The binary representation of-K (negative K) as a N-bit number is concat ( 1, 2^(N-1) -K). Another way to look at this is that we invert the bits in the positive representation and then add 1. 3 is 011 in binary. Flip the bits to get 100, add 1 to get 101, then prepend the sign bit (1) to get 1101.
 
 2. In a logical right shift, we shift the bits and put a 0 in the most significant bit. It is indicated with a >>> operator.
@@ -9,3 +11,10 @@ This method shifts 1 over by i bits, creating a value that looks like 00010000. 
 
 **Set Bit** <br>
 Set Bit shifts 1 over byi bits, creating a value like 00010000. By performing an OR with num, only the value at bit i will change. All other bits of the mask are zero and will not affect num.
+
+## Useful Links
+* https://www.techinterviewhandbook.org/algorithms/binary/
+* https://www.educative.io/blog/bit-manipulation-in-java
+* https://www.educative.io/blog/top-java-coding-interview-questions
+* https://www.educative.io/blog/top-50-java-data-structure-interview-questions
+* https://www.educative.io/blog/ace-top-15-java-algorithm-questions#dp

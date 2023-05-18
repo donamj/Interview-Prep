@@ -7,7 +7,8 @@
 - [Quick Sort](#quick-sort)
 - [Heap Sort](#heap-sort)
 
-<br>
+# Useful Links
+- https://www.techinterviewhandbook.org/algorithms/sorting-searching/
 
 # Bubble Sort
 ```

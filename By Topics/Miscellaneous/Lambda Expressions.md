@@ -1,3 +1,5 @@
+# Lambda Expressions
+
 **Syntax:**
 
 lambda operator -> body
@@ -17,3 +19,6 @@ It is not mandatory to use parentheses, if the type of that variable can be infe
 **Multiple parameters :**
 
 (p1, p2) -> System.out.println("Multiple parameters: " + p1 + ", " + p2);
+
+### Useful Links
+- https://www.educative.io/blog/java-lambda-expression-tutorial

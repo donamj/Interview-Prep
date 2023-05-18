@@ -22,5 +22,11 @@ The main advantage of the Greedy method is that it is straightforward, easy to u
 - Matrix Multiplication
 - Closest Pair problem 
 
+## Recursion
+* https://www.techinterviewhandbook.org/algorithms/recursion/
+
+## Dynamic Programming
+* https://www.techinterviewhandbook.org/algorithms/dynamic-programming/
+
 ## Useful resources
 * [Algorithm visualization](https://www.cs.usfca.edu/~galles/visualization/Algorithms.html)

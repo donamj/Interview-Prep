@@ -1,4 +1,5 @@
 # Hash Tables
+* https://www.techinterviewhandbook.org/algorithms/hash-table/
 
 ## HashMap vs HashSet
 Both are implemented in Java using the Hash Table class.

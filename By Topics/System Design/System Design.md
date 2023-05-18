@@ -3,7 +3,8 @@
 - [An approach to system design](https://www.teamblind.com/post/My-Approach-to-System-Design-V4SJARdx)
 - [System Design Primer](https://github.com/donnemartin/system-design-primer)
 - [System design template](https://leetcode.com/discuss/career/229177/My-System-Design-Template)
-
+- https://www.educative.io/blog/how-to-prepare-system-design-interview
+- https://www.educative.io/blog/distributed-system-design-patterns
 
 # System Design
 
