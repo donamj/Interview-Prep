@@ -59,5 +59,5 @@ All pairs of consecutive vertices in the sorted order are connected by edges; th
 - A vertex is put on the queue as soon as its indegree falls to 0. The topological ordering is the order in which the vertices DeQueue.
 
 ## Useful links
-- [Graph data structures forB beginners](https://adrianmejia.com/data-structures-for-beginners-graphs-time-complexity-tutorial/)
+- [Graph data structures for beginners](https://adrianmejia.com/data-structures-for-beginners-graphs-time-complexity-tutorial/)
 - https://www.techinterviewhandbook.org/algorithms/graph/

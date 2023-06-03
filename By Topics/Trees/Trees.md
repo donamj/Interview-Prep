@@ -24,6 +24,7 @@ https://www.baeldung.com/java-avl-trees
 ## Binary Tree
 
 ## Binary Search Tree
+* https://www.techiedelight.com/deletion-from-bst/
 
 ## Red Black Tree
 

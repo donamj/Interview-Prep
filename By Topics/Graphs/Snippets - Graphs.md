@@ -9,17 +9,16 @@
 - [Knapsack Problem](#knapsack-problem)
 - [Shorted path - Bellman Ford Algorithm](#shorted-path---bellman-ford-algorithm)
 - [Topological Sort](#topological-sort)
+- [Find number of islands](#find-number-of-islands)
 
 <br>
 
 # Notes
 1. If we want to find the shortest path (or just any path) between two nodes, BFS is generally better.
 
-2. DFS search uses recursive approach, while BFS uses iterative method using queue
+2. Topological Sorting is mainly used for scheduling jobs from the given dependencies among jobs. Uses DFS.
 
-3. Topological Sorting is mainly used for scheduling jobs from the given dependencies among jobs. Uses DFS.
-
-4. Shortest Path and Minimum Spanning Tree for unweighted graph - In an unweighted graph, the shortest path is the path with least number of edges. With Breadth First, we always reach a vertex from given source using the minimum number of edges.
+3. Shortest Path and Minimum Spanning Tree for unweighted graph - In an unweighted graph, the shortest path is the path with least number of edges. With Breadth First, we always reach a vertex from given source using the minimum number of edges.
 
 <br>
 
@@ -34,7 +33,7 @@ Set<String> DFS(MyGraph g)
     stack.push((String) g.adj.keySet().toArray()[0]);
     while(!stack.isEmpty()) 
     {
-          String vertex = stack.pop();
+        String vertex = stack.pop();
 	    if(!visited.contains(vertex)) 
 	    {
 		    visited.add(vertex);
@@ -285,9 +284,166 @@ void BellmanFord(Graph graph,int src)
 # Topological Sort
 The most common use for topological sort is ordering steps of a process where some the steps depend on each other.
 
-![https://github.com/donamj/Interview-Prep/blob/4d1f8b75605817ba01c6273be5402c565fc0d580/Assets/TopologicalSort_1.png](https://github.com/donamj/Interview-Prep/blob/4d1f8b75605817ba01c6273be5402c565fc0d580/Assets/TopologicalSort_1.png)
+https://www.scaler.com/topics/data-structures/topological-sort-algorithm/
 
-![https://github.com/donamj/Interview-Prep/blob/4d1f8b75605817ba01c6273be5402c565fc0d580/Assets/TopologicalSort_2.png](https://github.com/donamj/Interview-Prep/blob/4d1f8b75605817ba01c6273be5402c565fc0d580/Assets/TopologicalSort_2.png)
+We'll use the strategy we outlined below:
 
+* Identify a node with no incoming edges.
+* Add that node to the ordering.
+* Remove it from the graph.
+* Repeat.
+
+We'll keep looping until there aren't any more nodes with indegree zero. This could happen for two reasons:
+
+There are no nodes left. We've taken all of them out of the graph and added them to the topological ordering.
+There are some nodes left, but they all have incoming edges. This means the graph has a cycle, and no topological ordering exists.
+One small tweak. Instead of actually removing the nodes from the graph (and destroying our input!), we'll use a hash map to track each node's indegree. When we add a node to the topological ordering, we'll decrement the indegree of that node's neighbors, representing that those nodes have one fewer incoming edges.
+
+* Total time complexity of the algorithm is O(N + M).
+* Space complexity of the algorithm is - O(N)
+
+**Non-recursive:**
+```
+public static int[] topological_sort(int[][] adj_list){
+    int v = adj_list.length;
+    int sorted[] = new int[];
+    int indegrees = new int[v];
+    Queue<Integer> zero_incoming = new LinkedList<Integer>();
+    for (int i = 0; i < v; i++){
+        ArrayList<Integer> temp = (ArrayList<Integer>)adj_list[i];
+        for (int node : temp)
+            indegrees[node]++;
+    }
+    for (int node = 0; node < v; node++){
+        if (indegrees[node] == 0)
+            zero_incoming.push(node);
+    }
+    int visited_nodes = 0;
+    while (!zero_incoming.empty()){
+        int node = zero_incoming.poll();
+        sorted.add(node);
+        for (int u: adj_list[node]){
+            if (--indegrees[u] == 0)
+                zero_incoming.add(u);
+        }
+        visited_nodes++;
+    }
+    if (visited_nodes != v)
+        throw new Exception("Graph contains a cycle!");
+    else
+        return sorted;
+}
+
+```
+
+**Recursive:**
+```java
+import java.util.ArrayList;
+import java.util.List;
+import java.util.Stack;
+ 
+public class TopologicalSort
+{ 
+    Stack<Node> stack;
+ 
+    public TopologicalSort() {
+        stack=new Stack<>();
+    }
+    
+    static class Node
+    {
+        int data;
+        boolean visited;
+        List<Node> neighbours;
+ 
+        Node(int data)
+        {
+            this.data=data;
+            this.neighbours=new ArrayList<>();
+ 
+        }
+        public void addneighbours(Node neighbourNode)
+        {
+            this.neighbours.add(neighbourNode);
+        }
+        public List<Node> getNeighbours() {
+            return neighbours;
+        }
+        public void setNeighbours(List<Node> neighbours) {
+            this.neighbours = neighbours;
+        }
+        public String toString()
+        {
+            return ""+data;
+        }
+    }
+ 
+    // Recursive toplogical Sort
+    public  void toplogicalSort(Node node)
+    {
+        List<Node> neighbours=node.getNeighbours();
+        for (int i = 0; i < neighbours.size(); i++) {
+            Node n=neighbours.get(i);
+            if(n!=null && !n.visited)
+            {
+                toplogicalSort(n);
+                n.visited=true;
+            }
+        }
+        stack.push(node);
+    } 
+}
+```
+
+
+## Find number of islands
+- Linear scan the 2d grid map, if a node contains a '1', then it is a root node that triggers a Depth First Search.
+- During DFS, every visited node should be set as '0' to mark as visited node.
+- Count the number of root nodes that trigger DFS, this number would be the number of islands since each DFS starting at some root identifies an island.
+    ```
+    public int numIslands(char[][] grid) {
+            
+            if(grid == null || grid.length == 0)
+                return 0;
+            
+            int rowLen = grid.length;
+            int colLen = grid[0].length;
+            
+            int count = 0;
+            
+            
+            for(int row = 0; row < rowLen; row ++)
+            {
+                for(int col = 0; col <colLen; col++)
+                {
+                    if(grid[row][col] == '1')
+                    {
+                        count++;
+                        traverse(grid, row, col);
+                    }
+                }
+            }
+            
+            return count;
+            
+        }
+        
+        void traverse(char grid[][], int row, int col)
+        {
+            int rowLen = grid.length;
+            int colLen = grid[0].length;
+            
+            if(row < 0 || col < 0 || row >= rowLen || col >= colLen || grid[row][col] == '0')
+                return;
+            
+            grid[row][col] = '0';
+            
+            traverse(grid, row - 1, col);
+            traverse(grid, row + 1, col);
+            traverse(grid, row, col - 1);
+            traverse(grid, row, col + 1);
+
+        }
+    ```
 
 

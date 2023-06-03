@@ -17,6 +17,30 @@
 
 5. O(Log Log n) Time Complexity of a loop is considered as O(Log Log n) if the loop variables is reduced / increased exponentially by a constant amount.
 
+Here are some common time complexities:
+
+* Constant Time: O(1) <br/> 
+The algorithm takes a constant amount of time, regardless of the input size. Example: accessing an element in an array by index.
+
+* Logarithmic Time: O(log n) <br/>
+  The running time grows logarithmically with the input size. Examples: binary search, certain tree-based operations.
+
+* Linear Time: O(n) <br/>
+  The running time grows linearly with the input size. Example: iterating through an array or list.
+
+* Linearithmic Time: O(n log n) <br/>
+  The running time grows in a combination of linear and logarithmic growth. Example: efficient sorting algorithms like Merge Sort and Heap Sort.
+
+* Quadratic Time: O(n^2) <br/>
+  The running time grows quadratically with the input size. Example: nested loops that iterate over the input.
+
+* Cubic Time: O(n^3) <br/>
+  The running time grows cubically with the input size. Example: triple nested loops.
+
+* Exponential Time: O(2^n) <br/>
+  The running time grows exponentially with the input size. Example: brute-force solutions that check all possible combinations.
+
+
 ## What is serialization?
 Serialization is the process of making the object's state persistent. That means the state of the object is converted into a stream of bytes and stored in a file. In the same way, we can use the deserialization to bring back the object's state from bytes. This is one of the important concepts in Java programming because serialization is mostly used in networking programming. The objects that need to be transmitted through the network have to be converted into bytes. For that purpose, every class or interface must implement the Serializable interface. It is a marker interface without any methods.
 

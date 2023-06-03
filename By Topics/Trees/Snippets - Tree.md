@@ -6,7 +6,9 @@
 - [Check if tree is complete](#check-if-tree-is-complete)
 - [Check if a BST is valid](#check-if-a-bst-is-valid)
 - [Sub tree of another tree](#sub-tree-of-another-tree)
-
+- [Count of smaller numbers after self](#count-of-smaller-numbers-after-self)
+- [Height of a binary tree](#height-of-a-binary-tree)
+- [Level order traversal](#level-order-traversal)
 <br>
 
 
@@ -253,3 +255,146 @@ public class Solution
 
 **Time complexity:** O(m*n) <br>
 **Space complexity:** O(n), the depth of the recursion tree can go upto n. n refers to the number of nodes in s.
+
+
+## Count of smaller numbers after self
+```
+public class Solution {
+    public List<Integer> countSmaller(int[] nums) {
+        Integer[] result = new Integer[nums.length];
+         
+        BSTNode root = null;
+        for (int i = nums.length - 1; i >= 0; i--) {
+            root = insert(root, nums[i], i, result, 0);
+        }
+         
+        return Arrays.asList(result);
+    }
+     
+    private BSTNode insert(BSTNode root, int num, int i, Integer[] result, 
+                           int preSum) {
+        if (root == null) {
+            root = new BSTNode(num, 0);
+            result[i] = preSum;
+            return root;
+        } else if (root.val == num) {
+            root.dup++;
+            result[i] = preSum + root.numOfLeftNodes;
+            return root;
+        } else if (root.val > num) {
+            root.numOfLeftNodes++;
+            root.left = insert(root.left, num, i, result, preSum);
+        } else {
+            root.right = insert(root.right, num, i, result, 
+                preSum + root.numOfLeftNodes + root.dup);
+        }
+         
+        return root;
+    }
+     
+    class BSTNode {
+        int val;
+        int dup = 1;
+        int numOfLeftNodes;
+        BSTNode left, right;
+         
+        BSTNode(int val, int numOfLeftNodes) {
+            this.val = val;
+            this.numOfLeftNodes = numOfLeftNodes;
+        }
+    }
+}
+```
+<br/>
+
+## Height of a binary tree
+Time Complexity :- O(N)
+
+Space Complexity :- O(N)
+```
+public int maxDepth(TreeNode root) 
+{
+    // Base Condition
+    if(root == null) return 0;
+    // Hypothesis
+    int left = maxDepth(root.left);
+    int right = maxDepth(root.right);
+    // Induction
+    return Math.max(left, right) + 1;
+}
+```
+
+## Lowest common ancestor of a node
+https://leetcode.com/problems/lowest-common-ancestor-of-a-binary-search-tree/description/
+
+Time complexity: O(h), h is the height of the tree.
+
+Space complexity: O(h), total h stack spaces in recursive calls.
+```
+public TreeNode lowestCommonAncestor(TreeNode root, TreeNode p, TreeNode q) {
+    if(root.val > p.val && root.val > q.val){
+        return lowestCommonAncestor(root.left,p,q);
+    }
+    
+    if(root.val < p.val && root.val < q.val){
+        return lowestCommonAncestor(root.right,p,q);
+    }
+    
+    //  If above 2 conditions doesn't satisfy then 2 cases will arise. For them we simply return the current node.
+    return root;
+}
+```
+
+### Level order traversal
+Time complexity: O(n)
+
+Space complexity: O(n)
+
+```
+public List<List<Integer>> levelOrder(TreeNode root) {
+        
+    // Initialize an empty list to hold the result
+    List<List<Integer>> result = new ArrayList<>();
+
+    // If the root is null, return an empty list
+    if (root == null) {
+        return result;
+    }
+
+    // Initialize a queue to hold the nodes in the current level
+    Queue<TreeNode> queue = new LinkedList<>();
+
+    queue.add(root);
+
+    // Traverse the tree level by level
+    while (!queue.isEmpty()) {
+        
+        // Get the number of nodes in the current level
+        int levelSize = queue.size();
+
+        // Initialize a list to hold the nodes in the current level
+        List<Integer> levelNodes = new ArrayList<>();
+
+        // Traverse the nodes in the current level
+        for (int i = 0; i < levelSize; i++) {
+            // Get the first node in the queue
+            TreeNode node = queue.remove();
+
+            // Add the node's value to the list of nodes in the current level
+            levelNodes.add(node.val);
+
+            // Add the node's children to the queue for the next level
+            if (node.left != null) {
+                queue.add(node.left);
+            }
+            if (node.right != null) {
+                queue.add(node.right);
+            }
+        }
+        // Add the list of nodes in the current level to the result
+        result.add(levelNodes);
+    }
+// Return the final result
+return result;
+}
+```

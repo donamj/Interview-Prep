@@ -15,10 +15,9 @@
 - [Number of possible triangles](#number-of-possible-triangles)
 - [Find all pairs in an array with a given sum](#find-all-pairs-in-an-array-with-a-given-sum)
 - [Diagonal Matrix](#diagonal-matrix)
-- [Count of smaller numbers after self](#count-of-smaller-numbers-after-self)
 - [Find whether an array is a subset of another array](#find-whether-an-array-is-a-subset-of-another-array)
 - [Rotate an array](#rotate-an-array)
-- [Find number of islands](#find-number-of-islands)
+- [Product of array except self](#product-of-array-except-self)
 
 <br>
 
@@ -88,35 +87,47 @@ static int findMaxSumSubArray(int[] A) {
 
 ## Longest Arithmetics Sequence
 ```
-  public int longestArithSeqLength(int[] A) {
-        int len = A.length;
+	public int longestArithSeqLength(int[] A) {
+        if (A.length <= 1) return A.length;
+       
+        int longest = 0;
         
-        int result = 1;
-        HashMap<Integer, Integer>[] map = new HashMap[len];
+        // Declare a dp array that is an array of hashmaps.
+        // The map for each index maintains an element of the form-
+        //   (difference, length of max chain ending at that index with that difference).        
+        HashMap<Integer, Integer>[] dp = new HashMap[A.length];
         
-        for(int i = 0; i < len ; i++)
-        {
-            int curr = A[i];
-            map[i] = new HashMap<Integer, Integer>();
-            
-            HashMap<Integer, Integer> temp = map[i];
-            
-            for(int j = 0; j < i ; j++)
-            {
-                int diff = curr - A[j];
-                HashMap<Integer, Integer> prev = map[j];
-                
-                int val = prev.getOrDefault(diff, 0) + 1;
-                temp.put(diff, val);
-                
-                map[i] = temp;
-                
-                result = Math.max(result, temp.get(diff));
-            
-            }               
+        for (int i = 0; i < A.length; ++i) {
+            dp[i] = new HashMap<Integer, Integer>();
         }
         
-        return result + 1;
+        for (int i = 1; i < A.length; ++i) {
+            int x = A[i];
+            
+            for (int j = 0; j < i; ++j) {
+                int y = A[j];
+                int d = x - y;
+                
+                // We at least have a minimum chain length of 2 now, given that (A[j], A[i]) with the difference d, by default forms a chain of length 2.
+                int len = 2;  
+                
+                if (dp[j].containsKey(d)) {
+                    // At index j, if we had already seen a difference d, then potentially, we can add A[i] to the same chain and extend it by length 1.
+                    len = dp[j].get(d) + 1;
+                }
+                
+                // Obtain the maximum chain length already seen so far at index i for the given differene d;
+                int curr = dp[i].getOrDefault(d, 0);
+                
+                // Update the max chain length for difference d at index i.
+                dp[i].put(d, Math.max(curr, len));
+                
+                // Update the global max.
+                longest = Math.max(longest, dp[i].get(d));
+            }
+        }
+        
+        return longest;
     }
 ```
 
@@ -149,11 +160,11 @@ Maximum product of subarray - O(n)
 publicstatic String largestNumberFromArray(ArrayList<String> arr)
     {
         Collections.sort(arr, new Comparator<String>() {
-        publicint compare(String a, String b) {
-        String ab = a+b;
-        String ba = b+a;
-        return ab.compareTo(ba)>0 ? -1:1;
-        }
+			public int compare(String a, String b) {
+				String ab = a+b;
+				String ba = b+a;
+				return ab.compareTo(ba)>0 ? -1:1;
+			}
         }); 
         StringBuilder ans = new StringBuilder();
         for(String s : arr) {
@@ -203,31 +214,17 @@ Find the increasing sub sequences, Buy on the start of the sequence and sell at 
 
 ```
 // Function to find maximum profit that can be earned by buying and selling shares any number of times    
-public static int maxProfit(int[] price)
-{
-	// Store maximum profit gained
+public int maxProfit(int[] prices) {
+
 	int profit = 0;
-
-	// Initialize local minimum to first element's index
-	int j = 0;
-
-	// Start from second element
-	for (int i = 1; i < price.length; i++)
-	{
-		// Update local minimum if decreasing sequence is found
-		if (price[i - 1] > price[i]) 
-		{
-			j = i;
-		}
-
-		// Sell shares if current element is peak i.e. (previous < current > next)
-		if (price[i - 1] < price[i] && (i + 1 == price.length || price[i] > price[i + 1]))
-		{
-			profit += (price[i] - price[j]);
-			System.out.printf("Buy on day %d and sell on day %d\n", j + 1, i + 1);
-		}
+	int minPrice = prices[0];
+	for(int i =0; i< prices.length; i++) {
+		minPrice = Math.min(minPrice, prices[i]);
+		profit = Math.max(profit, prices[i]-minPrice);
 	}
+
 	return profit;
+	
 }
 ```
 
@@ -543,56 +540,6 @@ class Solution {
 
 <br>
 
-## Count of smaller numbers after self
-```
-public class Solution {
-    public List<Integer> countSmaller(int[] nums) {
-        Integer[] result = new Integer[nums.length];
-         
-        BSTNode root = null;
-        for (int i = nums.length - 1; i >= 0; i--) {
-            root = insert(root, nums[i], i, result, 0);
-        }
-         
-        return Arrays.asList(result);
-    }
-     
-    private BSTNode insert(BSTNode root, int num, int i, Integer[] result, 
-                           int preSum) {
-        if (root == null) {
-            root = new BSTNode(num, 0);
-            result[i] = preSum;
-            return root;
-        } else if (root.val == num) {
-            root.dup++;
-            result[i] = preSum + root.numOfLeftNodes;
-            return root;
-        } else if (root.val > num) {
-            root.numOfLeftNodes++;
-            root.left = insert(root.left, num, i, result, preSum);
-        } else {
-            root.right = insert(root.right, num, i, result, 
-                preSum + root.numOfLeftNodes + root.dup);
-        }
-         
-        return root;
-    }
-     
-    class BSTNode {
-        int val;
-        int dup = 1;
-        int numOfLeftNodes;
-        BSTNode left, right;
-         
-        BSTNode(int val, int numOfLeftNodes) {
-            this.val = val;
-            this.numOfLeftNodes = numOfLeftNodes;
-        }
-    }
-}
-```
-<br/>
-
 ## Find whether an array is a subset of another array
 ```
 static boolean isSubset(int arr1[], int arr2[]) {
@@ -685,52 +632,27 @@ public static Tuple findBuySellStockPrices(int[] array) {
   }
 ```
 
-## Find number of islands
-- Linear scan the 2d grid map, if a node contains a '1', then it is a root node that triggers a Depth First Search.
-- During DFS, every visited node should be set as '0' to mark as visited node.
-- Count the number of root nodes that trigger DFS, this number would be the number of islands since each DFS starting at some root identifies an island.
-    ```
-    public int numIslands(char[][] grid) {
-            
-            if(grid == null || grid.length == 0)
-                return 0;
-            
-            int rowLen = grid.length;
-            int colLen = grid[0].length;
-            
-            int count = 0;
-            
-            
-            for(int row = 0; row < rowLen; row ++)
-            {
-                for(int col = 0; col <colLen; col++)
-                {
-                    if(grid[row][col] == '1')
-                    {
-                        count++;
-                        traverse(grid, row, col);
-                    }
-                }
-            }
-            
-            return count;
-            
-        }
-        
-        void traverse(char grid[][], int row, int col)
-        {
-            int rowLen = grid.length;
-            int colLen = grid[0].length;
-            
-            if(row < 0 || col < 0 || row >= rowLen || col >= colLen || grid[row][col] == '0')
-                return;
-            
-            grid[row][col] = '0';
-            
-            traverse(grid, row - 1, col);
-            traverse(grid, row + 1, col);
-            traverse(grid, row, col - 1);
-            traverse(grid, row, col + 1);
+## Product of array except self
+- Approach: Using prefix and postfix
+- Idea: Just find prefix and postfix product and keep them in the ans array
+```
+public int[] productExceptSelf(int[] nums) {
+	int len = nums.length;
+	int result[] = new int[len];
 
-        }
-    ```
+	int prefix = 1; 
+	int postfix = 1;
+
+	for(int i = 0; i < len; i++) {
+		result[i] = prefix;
+		prefix *= nums[i];
+	}
+
+	for (int i = len-1; i >= 0; i--) {
+		result[i] *= postfix;
+		postfix *= nums[i];
+	}
+
+	return result;
+}
+```

@@ -1,6 +1,10 @@
 # Interview Prep Helper
 Refresh your memory first. [This](https://howtodoinjava.com/java-interview-questions/) might help.
 
+**Quick all in one:**
+* https://www.hackerearth.com/practice/algorithms/
+* https://www.scaler.com/topics/data-structures/
+
 ## Notes by topic
 - [Algorithms](https://github.com/donamj/Interview-Prep/blob/main/By%20Topics/Algorithms/Algorithms.md)
 - [ArrayList](https://github.com/donamj/Interview-Prep/blob/main/By%20Topics/Miscellaneous/ArrayList.md)
