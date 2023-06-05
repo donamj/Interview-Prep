@@ -1,16 +1,41 @@
 # Bit Manipulation
 
-1. The binary representation of-K (negative K) as a N-bit number is concat ( 1, 2^(N-1) -K). Another way to look at this is that we invert the bits in the positive representation and then add 1. 3 is 011 in binary. Flip the bits to get 100, add 1 to get 101, then prepend the sign bit (1) to get 1101.
 
-2. In a logical right shift, we shift the bits and put a 0 in the most significant bit. It is indicated with a >>> operator.
+Here are some common bit manipulation operations:
 
-3. In an arithmetic right shift, we shift values to the right but fill in the new bits with the value of the sign bit. This has the effect of(roughly) dividing by two. It is indicated by a  >> operator.
+* **Bitwise AND (&)**: Compares two bits and produces a result where the output bit is set if both input bits are set.
 
-**Get Bit** <br>
-This method shifts 1 over by i bits, creating a value that looks like 00010000. By performing an AND with num, we clear all bits other than the bit at bit i. Finally, we compare that to 0. If that new value is not zero, then bit i must have a 1. Otherwise, bit i is a 0.
+* **Bitwise OR (|)**: Compares two bits and produces a result where the output bit is set if either of the input bits is set.
 
-**Set Bit** <br>
-Set Bit shifts 1 over byi bits, creating a value like 00010000. By performing an OR with num, only the value at bit i will change. All other bits of the mask are zero and will not affect num.
+* **Bitwise XOR (^)**: Compares two bits and produces a result where the output bit is set if the input bits are different.
+
+* **Bitwise NOT (~)**: Flips the bits, converting 0 to 1 and 1 to 0.
+
+* **Left shift (<<)**: Shifts the bits of a number to the left by a specified number of positions. This operation effectively multiplies the number by 2 for each shift.
+
+* **Right shift (>>)**: Shifts the bits of a number to the right by a specified number of positions. This operation effectively divides the number by 2 for each shift.
+
+<br/>
+
+## BitSet
+BitSet is a class in Java that represents a resizable array of bits, where each bit can be either 0 or 1. It is part of the java.util package and is commonly used for efficient manipulation of sets of flags or boolean values. The BitSet array can increase in size as needed.
+
+
+```
+BitSet bits = new BitSet(16);
+
+// set some bits
+for(int i = 0; i < 16; i++) {
+    if((i % 2) == 0) bits.set(i);
+}
+
+System.out.println(bits);
+```
+
+Output: `{0, 2, 4, 6, 8, 10, 12, 14}`
+
+
+<br/>
 
 ## Useful Links
 * https://www.techinterviewhandbook.org/algorithms/binary/

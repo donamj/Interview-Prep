@@ -116,10 +116,120 @@ Kruskal's algorithm follows greedy approach as in each iteration it finds an edg
 - Sort the graph edges with respect to their weights.
 - Start adding edges to the MST from the edge with the smallest weight until the edge of the largest weight.
 - Only add edges which doesn't form a cycle , edges which connect only disconnected components.
-	
-**Time Complexity:** <br>
-In Kruskal’s algorithm, most time consuming operation is sorting because the total complexity of the Disjoint-Set operations will be O(ElogV), which is the overall Time Complexity of the algorithm.
 
+**Approach**
+
+Below is the step by step aproach to implement the Kruskal's algorithm.
+
+* Create an input array to store the Edges of the Graph.
+* Sort the Edges in the increasing order of their weights.
+* Create an output array to represent the Minimum Spanning Tree.
+* Create a parent array to Store the parent of each Vertex.
+* Initially make every vertex parent of itself.
+* Iterate over the input array.
+vFind the Parent of the Source and Destination of the Current Edge.
+* If Source Parent is not equal to the Destination Parent, then adding the Current Edge will not form any Cycle.
+* Print the Minimum Spanning Tree which is represented by the output array.
+
+
+**Time Complexity:** <br>
+In Kruskal’s algorithm, most time consuming operation is sorting because the total complexity of the Disjoint-Set operations will be **O(E log V)**, which is the overall Time Complexity of the algorithm.
+
+
+**Applications & Uses:**
+
+Here are some practical coding use cases for Kruskal's algorithm:
+
+* Kruskal is a popular algorithm used to find minimum-spanning trees.
+* This algorithm can be used to design a cost-effective network by only connecting the vertices having edges of minimum cost.
+* It can also be applied to the transportation of goods between different cities. As it is possible to find out the shortest path between warehouses that reduces the transportation time and cost.
+* It is an efficient algorithm that can save money by reducing the pipes to supply water, as we can easily find out the minimum cost to supply water in a city.
+* Can be used for electrical wiring too.
+
+<br/>
+<br/>
+
+```
+class Edge {
+
+    int node_start;
+    int node_end;
+    int weight;
+    Edge (int node1, int node2, int wt) {
+        node_start = node1;
+        node_end = node2;
+        weight = wt;
+    }
+
+    public int GetWeight() {
+        return weight;
+    }
+};
+
+class Graph {
+
+    private int num_nodes;
+    // Edgelist stores the edges of MST
+    private List<Edge> edgelist = new ArrayList<Edge>(); 
+    private List<Integer> parent;
+    private List<Integer> rank;
+
+    Graph (int num_nodes) {
+        this.num_nodes = num_nodes;
+        parent = new ArrayList<Integer>(num_nodes);
+        rank = new ArrayList<Integer>(num_nodes);
+    }
+
+    public void AddEdge (Edge e) {
+        edgelist.add(e);
+    }
+
+    public int FindParent (int node) {
+
+        // With path compression
+        if ( node != parent.get(node) )
+            parent.set(node, FindParent(parent.get(node)));
+
+        return parent.get(node);
+
+        /* Without path compression
+        if ( node == parent.get(node) )
+            return node;
+
+        return FindParent(parent.get(node)); */
+    }
+
+    //Funtion implements Kruskal's algorithm and finds the minimum spanning tree.
+    public void KruskalMST (List<Edge> result) {
+
+        for (int i=0; i<num_nodes; i++) {
+            parent.add(i, i); // Initially set every node as the parent of itself.
+            rank.add(i, 0);   // Initial rank of each node is 0.
+        }
+
+        // Lambda expression to sort the edges based on their weights
+        edgelist.sort((Edge e1, Edge e2)->e1.GetWeight()-e2.GetWeight());
+
+        for (Edge e : edgelist) {
+
+            int root1 = FindParent(e.node_start);
+            int root2 = FindParent(e.node_end);
+            // Union by rank technique to find minimum spanning tree.
+            if (root1 != root2) {
+                result.add(e);
+                if (rank.get(root1) < rank.get(root2)) {
+                   parent.set(root1, root2);
+                   rank.set(root2, rank.get(root2) + 1);
+                } else {
+                   parent.set(root2, root1);
+                   rank.set(root1, rank.get(root1) + 1);
+                }
+            }
+        }
+    }
+}
+
+```
 
 ## Prim's Algorithm
 Prim’s Algorithm also use Greedy approach to find the minimum spanning tree. In Prim’s Algorithm we grow the spanning tree from a starting position. Unlike an edge in Kruskal's, we add vertex to the growing spanning tree in Prim's.
