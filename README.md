@@ -1,11 +1,15 @@
 # Interview Prep Helper
+
+## Refresh your memory
 Refresh your memory first. [This](https://howtodoinjava.com/java-interview-questions/) might help.
+- https://www.educative.io/blog/top-java-interview-questions
+- https://howtodoinjava.com/java-interview-questions/
 
 **Quick all in one:**
 * https://www.hackerearth.com/practice/algorithms/
 * https://www.scaler.com/topics/data-structures/
 
-## Notes by topic
+## Notes
 - [Algorithms](https://github.com/donamj/Interview-Prep/blob/main/By%20Topics/Algorithms/Algorithms.md)
 - [ArrayList](https://github.com/donamj/Interview-Prep/blob/main/By%20Topics/Miscellaneous/ArrayList.md)
 - [Arrays](https://github.com/donamj/Interview-Prep/blob/main/By%20Topics/Arrays/Arrays.md)
@@ -30,21 +34,25 @@ Refresh your memory first. [This](https://howtodoinjava.com/java-interview-quest
 - [Points to note](https://github.com/donamj/Interview-Prep/blob/main/Notes%20by%20topic/Points%20To%20Note.md)
 - [Useful Links](https://github.com/donamj/Interview-Prep/blob/main/Useful%20Links.md)
 
-## Snippets by Pattern
-- [Recursion](https://github.com/donamj/Interview-Prep/blob/main/Snippets%20-%20By%20Pattern/Recursion.md)
-- [Sliding Window](https://github.com/donamj/Interview-Prep/blob/main/Snippets%20-%20By%20Pattern/Sliding%20Window.md)
-- [Two Pointers](https://github.com/donamj/Interview-Prep/blob/main/Snippets%20-%20By%20Pattern/Two%20Pointers.md)
-
-## Snippets By Topic
+## Snippets
+FInd some of the patterns [here](https://github.com/donamj/Interview-Prep/blob/main/Snippets%20-%20By%20Pattern/README.md).
 - [Arrays](https://github.com/donamj/Interview-Prep/blob/main/By%20Topics/Arrays/Snippets%20-%20Arrays.md)
 - [Graph](https://github.com/donamj/Interview-Prep/blob/main/By%20Topics/Graphs/Snippets%20-%20Graphs.md)
 - [LinkedList](https://github.com/donamj/Interview-Prep/blob/main/By%20Topics/LinkedLists/Snippets%20-%20LinkedList.md)
+- [Recursion](https://github.com/donamj/Interview-Prep/blob/main/Snippets%20-%20By%20Pattern/Recursion.md)
+- [Sliding Window](https://github.com/donamj/Interview-Prep/blob/main/Snippets%20-%20By%20Pattern/Sliding%20Window.md)
 - [Strings](https://github.com/donamj/Interview-Prep/blob/main/By%20Topics/Strings/Snippets%20-%20Strings.md)
 - [Tree](https://github.com/donamj/Interview-Prep/blob/main/By%20Topics/Trees/Snippets%20-%20Tree.md)
+- [Two Pointers](https://github.com/donamj/Interview-Prep/blob/main/Snippets%20-%20By%20Pattern/Two%20Pointers.md)
 
 ## Coding Questions
 ### Arrays
 - [Combination Sum](https://github.com/donamj/Interview-Prep/blob/main/By%20Topics/Arrays/Coding%20Questions/CombinationSum.java)
+- [Two Sum](https://github.com/donamj/Interview-Prep/blob/main/By%20Topics/Arrays/Coding%20Questions/TwoSum.java)
+
+### Concurrency
+- [Web crawler - multi threaded](https://github.com/donamj/Interview-Prep/blob/main/By%20Topics/Concurrency/Coding%20Questions/WebCrawlerMultiThreaded.java)
+- [Web crawler - single threaded](https://github.com/donamj/Interview-Prep/blob/main/By%20Topics/Concurrency/Coding%20Questions/WebCrawlerSingleThreaded.java)
 
 ### Trees
 - [Trie](https://github.com/donamj/Interview-Prep/blob/main/By%20Topics/Trees/Coding%20Questions/Trie.java)
@@ -53,10 +61,6 @@ Refresh your memory first. [This](https://howtodoinjava.com/java-interview-quest
 ### Graphs
 - [Detect cycle in directed graph](https://github.com/donamj/Interview-Prep/blob/main/By%20Topics/Graphs/Coding%20Questions/DetectCycleInDirectedGraph.java)
 - [Detect cycle in undirected graph](https://github.com/donamj/Interview-Prep/blob/main/By%20Topics/Graphs/Coding%20Questions/DetectCycleInUndirectedGraph.java)
-
-### Concurrency
-- [Web crawler - multi threaded](https://github.com/donamj/Interview-Prep/blob/main/By%20Topics/Concurrency/Coding%20Questions/WebCrawlerMultiThreaded.java)
-- [Web crawler - single threaded](https://github.com/donamj/Interview-Prep/blob/main/By%20Topics/Concurrency/Coding%20Questions/WebCrawlerSingleThreaded.java)
 
 ## Additional Resources
 - [Behavioural](https://github.com/donamj/Interview-Prep/blob/main/Additional%20Resources/Behavioural.md)

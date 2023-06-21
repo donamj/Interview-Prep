@@ -8,3 +8,4 @@ This would solve 1500+ problems:
 * Binary Search Patterns: https://lnkd.in/gKEm_qUK
 * Sliding Window Patterns: https://lnkd.in/gjatQ5pK
 * Graph Patterns: https://lnkd.in/gKE6w7Jb
+* Interval: https://www.techinterviewhandbook.org/algorithms/interval/

@@ -9,6 +9,8 @@
 ## Practice 
 * [LeetCode](https://leetcode.com/)
 * [Project Euler](https://projecteuler.net/)
+* [Technical Interview Handbook](https://www.techinterviewhandbook.org/coding-interview-study-plan/#week-5---12-in-depth-practice)
+
 
 ## Tech talks
 * [ACM archive](https://learning.acm.org/techtalks-archive)
