@@ -33,9 +33,10 @@ Refresh your memory first. [This](https://howtodoinjava.com/java-interview-quest
 ---
 - [Points to note](https://github.com/donamj/Interview-Prep/blob/main/Notes%20by%20topic/Points%20To%20Note.md)
 - [Useful Links](https://github.com/donamj/Interview-Prep/blob/main/Useful%20Links.md)
+- [Refreshers]()
 
 ## Snippets
-FInd some of the patterns [here](https://github.com/donamj/Interview-Prep/blob/main/Snippets%20-%20By%20Pattern/README.md).
+Find some of the patterns [here](https://github.com/donamj/Interview-Prep/blob/main/Snippets%20-%20By%20Pattern/README.md).
 - [Arrays](https://github.com/donamj/Interview-Prep/blob/main/By%20Topics/Arrays/Snippets%20-%20Arrays.md)
 - [Graph](https://github.com/donamj/Interview-Prep/blob/main/By%20Topics/Graphs/Snippets%20-%20Graphs.md)
 - [LinkedList](https://github.com/donamj/Interview-Prep/blob/main/By%20Topics/LinkedLists/Snippets%20-%20LinkedList.md)
@@ -44,6 +45,13 @@ FInd some of the patterns [here](https://github.com/donamj/Interview-Prep/blob/m
 - [Strings](https://github.com/donamj/Interview-Prep/blob/main/By%20Topics/Strings/Snippets%20-%20Strings.md)
 - [Tree](https://github.com/donamj/Interview-Prep/blob/main/By%20Topics/Trees/Snippets%20-%20Tree.md)
 - [Two Pointers](https://github.com/donamj/Interview-Prep/blob/main/Snippets%20-%20By%20Pattern/Two%20Pointers.md)
+
+## Snippets by Pattern
+- [Patterns](<Snippets - By Pattern/README.md>)
+- [Recursion](https://github.com/donamj/Interview-Prep/blob/main/Snippets%20-%20By%20Pattern/Recursion.md)
+- [Sliding Window](https://github.com/donamj/Interview-Prep/blob/main/Snippets%20-%20By%20Pattern/Sliding%20Window.md)
+- [Two Pointers](https://github.com/donamj/Interview-Prep/blob/main/Snippets%20-%20By%20Pattern/Two%20Pointers.md)
+
 
 ## Coding Questions
 ### Arrays
@@ -62,7 +70,11 @@ FInd some of the patterns [here](https://github.com/donamj/Interview-Prep/blob/m
 - [Detect cycle in directed graph](https://github.com/donamj/Interview-Prep/blob/main/By%20Topics/Graphs/Coding%20Questions/DetectCycleInDirectedGraph.java)
 - [Detect cycle in undirected graph](https://github.com/donamj/Interview-Prep/blob/main/By%20Topics/Graphs/Coding%20Questions/DetectCycleInUndirectedGraph.java)
 
-## Additional Resources
+### Concurrency
+- [Web crawler - multi threaded](https://github.com/donamj/Interview-Prep/blob/main/By%20Topics/Concurrency/Coding%20Questions/WebCrawlerMultiThreaded.java)
+- [Web crawler - single threaded](https://github.com/donamj/Interview-Prep/blob/main/By%20Topics/Concurrency/Coding%20Questions/WebCrawlerSingleThreaded.java)
+
+## Additional Topic
 - [Behavioural](https://github.com/donamj/Interview-Prep/blob/main/Additional%20Resources/Behavioural.md)
 - [CheatSheets](https://github.com/donamj/Interview-Prep/blob/main/Additional%20Resources/CheatSheets.md)
 - [Questions to interviewer](https://github.com/donamj/Interview-Prep/blob/main/Additional%20Resources/Questions%20to%20Interviewer.md)
