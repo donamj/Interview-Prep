@@ -1,7 +1,7 @@
 # Interview Prep Helper
 
 ## Refresh your memory
-Refresh your memory first. [This](https://howtodoinjava.com/java-interview-questions/) might help.
+Refresh your memory first. [These](https://howtodoinjava.com/java-interview-questions/) might help.
 - https://www.educative.io/blog/top-java-interview-questions
 - https://howtodoinjava.com/java-interview-questions/
 
