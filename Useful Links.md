@@ -17,4 +17,5 @@
 
 ## Data Structures
 * [Fun With Data Structures: Simple Tricks for Technical Interviews](https://medium.com/swlh/fun-with-data-structures-simple-tricks-for-technical-interviews-edcbf252bb34)
+* https://cooervo.github.io/Algorithms-DataStructures-BigONotation/data-structures.html
 
